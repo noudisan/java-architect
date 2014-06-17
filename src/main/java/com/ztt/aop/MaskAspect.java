@@ -15,7 +15,7 @@ public class MaskAspect {
 			throws Throwable {
 		Object result = jp.proceed();
 		//System.out.println(1/0);
-		
+		//this is a new test
 		return result==null?"":result.toString()+"new result";
 	}
 }
