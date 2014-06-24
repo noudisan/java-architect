@@ -11,7 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
-import com.ztt.rest.TradeModel;
+import com.ztt.model.TradeModel;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:/applicationContext*.xml")
@@ -30,7 +30,7 @@ public class RestTest {
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
-		HttpEntity request = new HttpEntity(JSONInput, headers);
+		HttpEntity<String> request = new HttpEntity<String>(JSONInput, headers);
 
 		String res = restTemplate.postForObject("http://localhost:9000/mvc/helloworld/post", request,String.class);
 		System.out.println(res);

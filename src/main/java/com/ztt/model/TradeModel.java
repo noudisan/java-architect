@@ -1,4 +1,4 @@
-package com.ztt.rest;
+package com.ztt.model;
 
 import java.io.Serializable;
 
