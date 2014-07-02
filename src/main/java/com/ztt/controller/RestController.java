@@ -17,7 +17,7 @@ public class RestController {
 	@ResponseBody
 	@Mask
 	public String hello() {
-		String aa = "hello" + "get";
+		String aa = "hello world ";
 		return aa;
 	}
 	

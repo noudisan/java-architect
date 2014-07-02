@@ -10,43 +10,101 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
+        <spring.version>3.2.3.RELEASE</spring.version>
+        <spring.security.version>3.1.1.RELEASE</spring.security.version>
+        <org.aspectj>1.6.12</org.aspectj>
+    </properties>
+    
 	<dependencies>
 		<!--spring  -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>3.2.3.RELEASE</version>
-			<type>jar</type>
-			<scope>compile</scope>
-			<optional>false</optional>
+			<version>${spring.version}</version>
 		</dependency>
+		
+		<!-- spring security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.security.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-core</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+                <exclusion>
+                    <artifactId>spring-expression</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+                <exclusion>
+					<artifactId>spring-context</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-acl</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>${spring.security.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-expression</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+	      <groupId>org.springframework.security</groupId>
+	      <artifactId>spring-security-ldap</artifactId>
+	      <version>${spring.security.version}</version>
+	    </dependency>
 		
 		<!-- aspectj -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>3.2.3.RELEASE</version>
-<!-- 			<type>jar</type>
-			<scope>compile</scope>
-			<optional>false</optional> -->
+			<version>${spring.version}</version>
 		</dependency>
 	    <dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>1.6.12</version>
-<!-- 			<type>jar</type>
-			<scope>compile</scope>
-			<optional>false</optional> -->
+			<version>${org.aspectj}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.6.12</version>
-<!-- 			<type>jar</type>
-			<scope>compile</scope>
-			<optional>false</optional> -->
+			<version>${org.aspectj}</version>
 		</dependency>
 		
 		
