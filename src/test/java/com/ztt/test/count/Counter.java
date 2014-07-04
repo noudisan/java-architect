@@ -1,4 +1,4 @@
-package com.ztt.test;
+package com.ztt.test.count;
 
 public class Counter {
 	public   static int count = 11;

@@ -14,7 +14,9 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>    
-   				classpath:applicationContext-security.xml
+   				classpath:applicationContext-security.xml,
+   				classpath:applicationContext-dao.xml,
+   				classpath:applicationContext-task.xml
  		 </param-value>
 	</context-param>
 	<listener>

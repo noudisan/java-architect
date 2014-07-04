@@ -11,7 +11,7 @@ import com.ztt.model.TradeModel;
 
 @Controller
 @RequestMapping("/rest")
-public class RestController {
+public class AopController {
 	
 	@RequestMapping(value = "get", method = RequestMethod.GET)
 	@ResponseBody
