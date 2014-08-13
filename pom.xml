@@ -173,6 +173,20 @@
             <artifactId>ojdbc16</artifactId>
             <version>11.2.0.1.0</version>
         </dependency>
+        <!-- zip -->
+       <dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
