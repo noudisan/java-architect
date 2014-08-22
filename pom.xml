@@ -16,6 +16,13 @@
     </properties>
     
 	<dependencies>
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		
 		<!--spring  -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -168,11 +175,12 @@
         </dependency>
         
         <!-- oracle -->
-           <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc16</artifactId>
-            <version>11.2.0.1.0</version>
-        </dependency>
+        <dependency>
+			<groupId>ojdbc</groupId>
+			<artifactId>ojdbc</artifactId>
+			<version>14</version>
+		</dependency>
+
         <!-- zip -->
        <dependency>
 			<groupId>org.apache.ant</groupId>
@@ -186,7 +194,20 @@
 			<version>1.5.2</version>
 		</dependency>
 		
-		
+	<!--Redis --> 
+	<dependency> 
+		<groupId>redis.clients</groupId> 
+		<artifactId>jedis</artifactId> 
+		<version>2.0.0</version> 
+		<type>jar</type> 
+		<scope>compile</scope> 
+	</dependency> 
+	<!--Spring Redis --> 
+	<dependency>  
+        <groupId>org.springframework.data</groupId>  
+        <artifactId>spring-data-redis</artifactId>  
+        <version>1.0.2.RELEASE</version>  
+    </dependency>  
 	</dependencies>
 
 	<build>
