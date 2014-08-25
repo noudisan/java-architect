@@ -21,6 +21,8 @@ public class Company {
 				realpath + "/applicationContext-editor.xml");
 		Company c = (Company) context.getBean("company");
 		System.out.println(c.getDirector().getName() + "*"+ c.getDirector().getAge());
+		//AbstractApplicationContext.close() Method;
+		((FileSystemXmlApplicationContext)context).close();
 		
 	}
 

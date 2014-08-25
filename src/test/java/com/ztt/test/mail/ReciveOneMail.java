@@ -4,7 +4,6 @@ import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.PrintWriter;
@@ -203,7 +202,7 @@ public class ReciveOneMail {
 	 */
 	public boolean isContainAttach(Part part) throws Exception {
 		boolean attachflag = false;
-		String contentType = part.getContentType();
+		//String contentType = part.getContentType();
 		if (part.isMimeType("multipart/*")) {
 			Multipart mp = (Multipart) part.getContent();
 			for (int i = 0; i < mp.getCount(); i++) {

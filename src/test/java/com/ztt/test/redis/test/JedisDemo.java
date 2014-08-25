@@ -8,7 +8,6 @@ import redis.clients.jedis.Jedis;
 
 public class JedisDemo {
 
-	@SuppressWarnings("unchecked")
 	public void testDeom() {
 		Jedis redis = new Jedis("localhost", 6379);// 连接redis
 
@@ -17,13 +16,13 @@ public class JedisDemo {
 		redis.hset("yyweb", "mall", "mai.yy.com");
 		redis.hset("yyweb", "duowan", "www.duowan.com");
 		// 返回哈希表key中，一个或多个给定域的值。
-		List list = redis.hmget("yyweb", "music", "mall", "duowan");
+		List<String> list = redis.hmget("yyweb", "music", "mall", "duowan");
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
 
 		// 同时将多个field - value(域-值)对设置到哈希表key中。
-		Map map = new HashMap();
+		Map<String,String> map = new HashMap<String,String>();
 		map.put("uid", "10000");
 		map.put("username", "chenxu");
 		redis.hmset("hash", map);
@@ -32,7 +31,7 @@ public class JedisDemo {
 
 		// HGETALL key返回哈希表key中，所有的域和值。
 		Map<String, String> maps = redis.hgetAll("hash");
-		for (Map.Entry entry : maps.entrySet()) {
+		for (Map.Entry<String,String> entry : maps.entrySet()) {
 			System.out.print(entry.getKey() + ":" + entry.getValue() + "\t");
 		}
 

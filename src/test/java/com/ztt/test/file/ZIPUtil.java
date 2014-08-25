@@ -32,12 +32,12 @@ public class ZIPUtil {
 		if (unzipFile.exists())
 			unzipFile.delete();
 		unzipFile.mkdir();
-		Enumeration zipEnum = zipFile.getEntries();
+		Enumeration<ZipEntry> zipEnum = zipFile.getEntries();
 		InputStream input = null;
 		OutputStream output = null;
 		ZipEntry entry = null;
 		while (zipEnum.hasMoreElements()) {
-			entry = (ZipEntry) zipEnum.nextElement();
+			entry =  zipEnum.nextElement();
 			String entryName = new String(entry.getName());
 			String names[] = entryName.split("\\/");
 			int length = names.length;
