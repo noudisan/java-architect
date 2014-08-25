@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<!-- Reference Manual http://logback.qos.ch/manual/index.html -->
+
+<configuration> 
+   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> 
+    <!-- encoder 默认配置为PatternLayoutEncoder --> 
+    <encoder> 
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern> 
+    </encoder> 
+  </appender> 
+ 
+  <!-- logback为java中的包 --> 
+  <logger name="logback"/> 
+  <!--logback.LogbackDemo：类的全路径 --> 
+  <logger name="logback.LogbackDemo" level="INFO" additivity="false">
+  	<appender-ref ref="STDOUT"/>
+  </logger> 
+  
+  <root level="WARN">           
+    <appender-ref ref="STDOUT" /> 
+  </root>   
+</configuration>

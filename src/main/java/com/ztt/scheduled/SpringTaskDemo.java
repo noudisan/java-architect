@@ -18,6 +18,6 @@ public class SpringTaskDemo {
 */
 	@Scheduled(cron = "0/5 * * * * ?")
 	void doSomethingWith() {
-		System.out.println("I'm doing with cron now!");
+		//System.out.println("I'm doing with cron now!");
 	}
 }

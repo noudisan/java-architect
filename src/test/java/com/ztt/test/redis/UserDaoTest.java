@@ -17,6 +17,7 @@ public class UserDaoTest {
 	@Autowired
 	private UserDao userDao;
 	
+	
 	@Test
 	public void crud() {
 		// -------------- Create ---------------
