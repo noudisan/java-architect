@@ -1,4 +1,4 @@
-package com.ztt.test.redis.test;
+package com.ztt.test.redis;
 
 import java.util.HashMap;
 import java.util.Iterator;
