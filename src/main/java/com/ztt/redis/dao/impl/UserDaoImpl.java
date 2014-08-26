@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
 	private Logger logger = LoggerFactory.getLogger(UserDaoImpl.class);
 	@Autowired
 	private RedisTemplate<Serializable, Serializable> redisTemplate;
-	
+
 	private static final String PREFIX_UID ="user.uid.";
 	@Override
 	public void save(final User user) {

@@ -18,6 +18,8 @@
 	
 	<mvc:annotation-driven />
 	 
+	<bean id="testTemplate" class="com.ztt.resource.TestTemplate"></bean> 
+	 
 	
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
         <property name="messageConverters">

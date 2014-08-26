@@ -5,8 +5,13 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.core.BoundHashOperations;
+import org.springframework.data.redis.core.BoundListOperations;
 import org.springframework.data.redis.core.ListOperations;
+import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.SessionCallback;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.stereotype.Repository;
 
@@ -16,8 +21,9 @@ import com.ztt.redis.model.Person;
 @Repository("PersonDao")
 public class PersonDaoImpl implements PersonDao {
 	@Autowired
-	private RedisTemplate<String, String> template;
-
+	private RedisTemplate<String, byte[]> redisTemplate;  
+	  
+	 
 	@Resource(name = "redisTemplate")
 	private ListOperations<String, byte[]> listOps;
 
@@ -58,9 +64,53 @@ public class PersonDaoImpl implements PersonDao {
 	}
 
 	@Override
-	public void remove(String uid) {
-		while(listOps.leftPop(uid)!=null){
+	public void remove(final String uid) {
+		//RedisOperations<String, byte[]> open = listOps.getOperations();
+		/*while (listOps.leftPop(uid) != null) {
 			continue;
+		}*/
+		List<Object> txResults = redisTemplate.execute(new SessionCallback<List<Object>>() {
+		    public List<Object> execute(RedisOperations operations) throws DataAccessException {
+		        operations.multi();
+		        operations.opsForSet().add("aadasa", "value1".getBytes());
+		        // This will contain the results of all ops in the transaction
+		        return operations.exec();
+		    }
+		});
+		System.out.println("Number of items added to set: " + txResults.get(0));
+		
+		/*SessionCallback<String> sessionCallback = new SessionCallback<String>() {
+			
+			@Override
+			public <K, V> String execute(RedisOperations<K, V> operation)
+					throws DataAccessException {
+				
+				operation.multi();
+				for(int i=0;i<10;i++){
+					BoundListOperations hs = ((RedisTemplate)operation).boundListOps(uid);
+					hs.leftPush(uid, "hao"+i);
+				}
+				operation.exec();
+				return null;
+			}
+		};
+		redisTemplate.execute(sessionCallback);*/
+		
+		try {
+			//redisTemplate.watch(uid);
+			//redisTemplate.multi();
+			//ListOperations<String, byte[]> open = redisTemplate.opsForList();
+			//open.leftPush(uid, "asdf".getBytes());
+			/*while (open.leftPop(uid) != null) {
+				continue;
+			}*/
+			//redisTemplate.discard();
+			//open.boundListOps(uid).leftPush("aaaaa".getBytes());
+			//int a = 1 / 0;
+		} catch (Exception e) {
+			//open.discard();
 		}
+		
+		//open.exec();
 	}
 }

@@ -45,7 +45,28 @@ public class PersonDaoTest {
 
 	@Test
 	public void remove() {
+		/*String uid = "u123456";
+		String address1 = "上海";
+		Person person = new Person();
+		person.setAddress(address1);
+		person.setUid(uid);
+		personDao.save(person);
+
+		String address2 = "北京";
+		Person person2 = new Person();
+		person2.setAddress(address2);
+		person2.setUid(uid);
+		personDao.save(person2);*/
+		
 		String uid = "u123456";
 		personDao.remove(uid);
+		Long size = personDao.getSize(uid);
+		System.out.println(size);
+		if (size > 0L) {
+			for (long i = 0; i < size; i++) {
+				System.out.println(personDao.getIndex(uid, i).getAddress());
+			}
+		}
+		
 	}
 }
