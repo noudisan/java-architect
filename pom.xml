@@ -5,7 +5,7 @@
 	<artifactId>spring-rest</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-rest Maven Webapp</name>
+	<name>spring-rest</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
