@@ -1,5 +1,6 @@
 package com.ztt.test.redis;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ztt.redis.dao.PersonDao;
 import com.ztt.redis.model.Person;
-
+@Ignore
 @ContextConfiguration(locations = { "classpath*:applicationContext-*.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class PersonDaoTest {

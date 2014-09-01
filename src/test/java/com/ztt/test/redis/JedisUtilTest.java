@@ -6,12 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
-
+@Ignore
 public class JedisUtilTest {
 	JedisPool pool;
 	Jedis jedis;

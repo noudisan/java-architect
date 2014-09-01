@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ztt.resource.TestInterface;
 
-@ContextConfiguration(locations = { "classpath*:applicationContext-*.xml" })
+@ContextConfiguration(locations = { "classpath*:test-*.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ResourceTest {
 
@@ -18,6 +18,7 @@ public class ResourceTest {
 
 	@Test
 	public void test() {
-		testInterface.testMethod();
+
+        testInterface.testMethod();
 	}
 }

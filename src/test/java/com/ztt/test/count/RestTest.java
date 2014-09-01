@@ -2,6 +2,7 @@ package com.ztt.test.count;
 
 import net.sf.json.JSONObject;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.http.HttpEntity;
@@ -12,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
 import com.ztt.model.TradeModel;
-
+@Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:/applicationContext*.xml")
 public class RestTest {
