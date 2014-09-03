@@ -14,10 +14,8 @@ import com.ztt.model.TradeModel;
 public class AopController {
 	
 	@RequestMapping(value = "get", method = RequestMethod.GET)
-	@ResponseBody
-	@Mask
 	public String hello() {
-		String aa = "hello world ";
+		String aa = "hello";
 		return aa;
 	}
 	
@@ -27,4 +25,6 @@ public class AopController {
 		String aa = "aaaaaaaaaaa" + tradeModel.getStatus();
 		return aa;
 	}
+
+
 }

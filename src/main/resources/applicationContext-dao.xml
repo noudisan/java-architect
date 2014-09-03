@@ -12,7 +12,7 @@
      http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd
      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
-    <context:component-scan base-package="com.ztt" />
+   <!-- <context:component-scan base-package="com.ztt" />-->
     <!-- 导入属性配置文件 -->
     <context:property-placeholder  order="1"  location="classpath:jdbc.properties" ignore-unresolvable="true" />
 
