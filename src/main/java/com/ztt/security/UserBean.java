@@ -1,6 +1,6 @@
 package com.ztt.security;
 
-import com.ztt.security.dao.SysUser;
+import com.ztt.security.dao.RestUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,9 +12,9 @@ import java.util.*;
  */
 public class UserBean implements UserDetails{
 
-    private SysUser sysUser;
+    private RestUser sysUser;
     private List<String> roles = new ArrayList<>();
-    public UserBean(SysUser sysUser) {
+    public UserBean(RestUser sysUser) {
         this.sysUser = sysUser;
     }
     @Override

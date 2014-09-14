@@ -46,7 +46,7 @@
         <beans:property name="sysUserDao" ref="sysUserDaoImpl" />
     </beans:bean>
 
-    <beans:bean id="sysUserDaoImpl" class="com.ztt.security.dao.SysUserDaoImpl"></beans:bean>
+    <beans:bean id="sysUserDaoImpl" class="com.ztt.security.dao.RestUserDaoImpl"></beans:bean>
     <!-- 未登录的切入点 -->
     <beans:bean id="authenticationEntryPoint"
                 class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
