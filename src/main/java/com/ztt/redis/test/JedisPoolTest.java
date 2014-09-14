@@ -63,9 +63,9 @@ public class JedisPoolTest {
 	 * 
 	 * 并发测试(不用池)
 	 * 
-	 * @param paiallel并发量
+	 * @param paiallel 并发量
 	 * 
-	 * @param count每个并发循环次数
+	 * @param count 每个并发循环次数
 	 */
 
 	public static void paiallelTestNoPool(int paiallel, int count) {
@@ -91,9 +91,9 @@ public class JedisPoolTest {
 	 * 
 	 * 并发测试(用池)
 	 * 
-	 * @param paiallel并发量
+	 * @param paiallel 并发量
 	 * 
-	 * @param count每个并发循环次数
+	 * @param count 每个并发循环次数
 	 */
 
 	public static void paiallelTestWithPool(int paiallel, int count) {

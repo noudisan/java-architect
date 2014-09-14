@@ -9,19 +9,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class MaskAspect {
 
-	@Around("execution(public * *(..))  && @annotation(mask)")
-	public Object get(ProceedingJoinPoint jp, Mask mask) throws Throwable {
-		//Object[] parames = jp.getArgs();// 获取目标方法体参数
-		
-		String className = jp.getTarget().getClass().toString();// 获取目标类名
-		className = className.substring(className.indexOf("com"));
-		String signature = jp.getSignature().toString();// 获取目标方法签名
-		String methodName = signature.substring(signature.lastIndexOf(".") + 1,
-				signature.indexOf("("));
+    @Around("execution(public * *(..))  && @annotation(mask)")
+    public Object get(ProceedingJoinPoint jp, Mask mask) throws Throwable {
+        //Object[] parames = jp.getArgs();// 获取目标方法体参数
 
-		Object result = jp.proceed();
+        String className = jp.getTarget().getClass().toString();// 获取目标类名
+        className = className.substring(className.indexOf("com"));
+        String signature = jp.getSignature().toString();// 获取目标方法签名
+        String methodName = signature.substring(signature.lastIndexOf(".") + 1, signature.indexOf("("));
 
-		return result == null ? "" : result.toString() + "\tmethodName:"
-				+ methodName;
-	}
+        Object result = jp.proceed();
+
+        return result == null ? "" : result.toString() + "\tmethodName:" + methodName;
+    }
 }
