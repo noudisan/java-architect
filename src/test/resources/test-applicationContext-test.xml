@@ -15,4 +15,6 @@
     </bean>-->
 
 	<bean id="testTemplate" class="com.ztt.test.mock.TestInterfaceMock"></bean>
+
+    <bean id="forkJoinPoolFactoryBean" class="org.springframework.scheduling.concurrent.ForkJoinPoolFactoryBean" ></bean>
 </beans>

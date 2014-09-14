@@ -27,9 +27,6 @@ public class CountTask extends RecursiveTask<Integer> {
 					Thread.sleep(100);
 				} catch (InterruptedException e) {
 				}
-				if(i==4){
-					System.out.println(1/0);
-				}
 				sum += i;
 			}
 		} else {
