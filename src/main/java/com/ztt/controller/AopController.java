@@ -1,6 +1,8 @@
 package com.ztt.controller;
 
+import com.ztt.security.UserBeanHelper;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +16,8 @@ import com.ztt.model.TradeModel;
 public class AopController {
 	
 	@RequestMapping(value = "get", method = RequestMethod.GET)
-	public String hello() {
+	public String hello(Model model) {
+        model.addAttribute("name",UserBeanHelper.getUsername());
 		String aa = "hello";
 		return aa;
 	}
