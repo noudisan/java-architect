@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztt.dao.ExportFileMapper">
+
+    <resultMap id="exportFileModel" type="com.ztt.model.ExportFile">
+        <id column="ID" property="id"/>
+        <id column="FILE_NAME" property="fileName"/>
+        <id column="FILE_PATH" property="filePath"/>
+        <id column="START_DATE" property="startDate"/>
+        <id column="END_DATE" property="endDate"/>
+        <id column="STATUS" property="status"/>
+        <id column="MESSAGE" property="message"/>
+        <id column="CREATE_DATE" property="createDate"/>
+
+    </resultMap>
+
+    <insert id="save" parameterType="com.ztt.model.ExportFile">
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        <![CDATA[
+          INSERT INTO TB_EXPORT_FILE (ID,FILE_NAME,FILE_PATH,START_DATE,END_DATE,STATUS,MESSAGE,CREATE_DATE)
+          VALUES (#{id},#{fileName},#{filePath},#{startDate},#{endDate},#{status},#{message},#{createDate})
+        ]]>
+    </insert>
+
+    <select id="query" parameterType="com.ztt.dto.ExportFileDto" resultMap="exportFileModel">
+        <![CDATA[
+          SELECT * FROM TB_EXPORT_FILE
+        ]]>
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="fileName != null and fileName != ''">
+                <![CDATA[FILE_NAME = #{fileName}]]>
+            </if>
+            <if test="id != null and id != '' ">
+                <![CDATA[ AND id = #{id}]]>
+            </if>
+            <if test="filePath != null and filePath != '' ">
+                <![CDATA[ AND FILE_PATH = #{filePath}]]>
+            </if>
+            <if test="startDate != null and startDate != '' ">
+                <![CDATA[ AND START_DATE >= #{startDate}]]>
+            </if>
+            <if test="endDate != null and endDate != '' ">
+                <![CDATA[ AND END_DATE <= #{endDate}]]>
+            </if>
+            <if test="status != null and status != '' ">
+                <![CDATA[ AND STATUS = #{status}]]>
+            </if>
+            <if test="message != null and message != '' ">
+                <![CDATA[ AND MESSAGE = #{message}]]>
+            </if>
+        </trim>
+        <![CDATA[ ORDER BY CREATE_DATE DESC ]]>
+    </select>
+
+    <update id="updateByFileName" parameterType="com.ztt.model.ExportFile">
+        <![CDATA[
+            update TB_EXPORT_FILE t
+        ]]>
+        <trim prefix="SET" suffixOverrides=", ">
+            <if test="status != null and status !='' ">
+                <![CDATA[ t.STATUS =#{status}, ]]>
+            </if>
+            <if test="message != null and message !='' ">
+                <![CDATA[ t.MESSAGE =#{message}, ]]>
+            </if>
+        </trim>
+        <![CDATA[ where t.FILE_NAME=#{fileName} ]]>
+    </update>
+
+    <select id="list" parameterType="com.ztt.dto.ExportFileDto" resultMap="exportFileModel">
+        select * from TB_EXPORT_FILE
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="fileName != null and fileName != ''">
+                <![CDATA[FILE_NAME = #{fileName}]]>
+            </if>
+            <if test="filePath != null and filePath != '' ">
+                <![CDATA[ AND FILE_PATH = #{filePath}]]>
+            </if>
+            <if test="startDate != null and startDate != '' ">
+                <![CDATA[ AND START_DATE >= #{startDate}]]>
+            </if>
+            <if test="endDate != null and endDate != '' ">
+                <![CDATA[ AND END_DATE <= #{endDate}]]>
+            </if>
+            <if test="status != null and status != '' ">
+                <![CDATA[ AND STATUS = #{status}]]>
+            </if>
+            <if test="message != null and message != '' ">
+                <![CDATA[ AND MESSAGE = #{message}]]>
+            </if>
+        </trim>
+        <![CDATA[ ORDER BY CREATE_DATE DESC ]]>
+    </select>
+
+    <select id="count" parameterType="com.ztt.dto.ExportFileDto" resultType="int">
+        select count(*) from TB_EXPORT_FILE
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="fileName != null and fileName != ''">
+                <![CDATA[FILE_NAME = #{fileName}]]>
+            </if>
+            <if test="filePath != null and filePath != '' ">
+                <![CDATA[ AND FILE_PATH = #{filePath}]]>
+            </if>
+            <if test="startDate != null and startDate != '' ">
+                <![CDATA[ AND START_DATE >= #{startDate}]]>
+            </if>
+            <if test="endDate != null and endDate != '' ">
+                <![CDATA[ AND END_DATE <= #{endDate}]]>
+            </if>
+            <if test="status != null and status != '' ">
+                <![CDATA[ AND STATUS = #{status}]]>
+            </if>
+            <if test="message != null and message != '' ">
+                <![CDATA[ AND MESSAGE = #{message}]]>
+            </if>
+        </trim>
+    </select>
+
+    <delete id="delete" parameterType="long">
+        <![CDATA[
+            delete from TB_EXPORT_FILE  where ID = #{id}
+        ]]>
+    </delete>
+</mapper>
+
