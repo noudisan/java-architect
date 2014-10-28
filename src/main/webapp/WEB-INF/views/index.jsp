@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
-    <title>Polygon - Free HTML5 Template</title>
+    <title>建筑学</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta charset="UTF-8">
@@ -24,6 +25,14 @@
             }else {
                 div.style.display = "block";
             }
+
+            var div2 = document.getElementById("newpost2");
+            if (div2.style.display !== "none"){
+                div2.style.display = "none";
+            }else {
+                div2.style.display = "block";
+            }
+
         }
     </script>
 
@@ -42,27 +51,17 @@
         <div class="container">
             <div class="row templatemo_gallerygap">
                 <div class="col-md-12 responsive-menu">
-                    <a href="#" class="menu-toggle-btn">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <a href="#" class="menu-toggle-btn"><i class="fa fa-bars"></i></a>
                 </div> <!-- /.col-md-12 -->
                 <div class="col-md-3 col-sm-12">
                     <a href="#"><img src="images/templatemo_logo.jpg" alt="Polygon Template"></a>
                 </div>
                 <div class="col-md-9 main_menu">
                     <ul>
-                        <li><a class="show-1 templatemo_home" href="#">
-                            <span class="fa fa-camera"></span>
-                            Gallery</a></li>
-                        <li><a class="show-2 templatemo_page2" href="#">
-                            <span class="fa fa-users"></span>
-                            Our team</a></li>
-                        <li><a class="show-3 templatemo_page3" href="#">
-                            <span class="fa fa-cogs"></span>
-                            Services</a></li>
-                        <li><a class="show-5 templatemo_page5" href="#">
-                            <span class="fa fa-envelope"></span>
-                            Contact</a></li>
+                        <li><a class="show-1 templatemo_home" href="#"><span class="fa fa-camera"></span>Gallery</a></li>
+                        <li><a class="show-2 templatemo_page2" href="#"><span class="fa fa-users"></span>Our team</a></li>
+                        <li><a class="show-3 templatemo_page3" href="#"><span class="fa fa-cogs"></span>Services</a></li>
+                        <li><a class="show-5 templatemo_page5" href="#"><span class="fa fa-envelope"></span>Contact</a></li>
                     </ul>
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
@@ -315,6 +314,79 @@
         </div>
     </div>
 </div>
+
+<div  id="newpost2" style="display:none;" class="container answer_list templatemo_gallerytop">
+    <div class="row templatemorow">
+        <div class="hex col-sm-6">
+            <div>
+                <div class="hexagon hexagon2 gallery-item">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(/images/gallery/10.jpg);">
+                            <div class="overlay">
+                                <a href="/images/gallery/10.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hex col-sm-6">
+            <div>
+                <div class="hexagon hexagon2 gallery-item">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(/images/gallery/11.jpg);">
+                            <div class="overlay">
+                                <a href="/images/gallery/11.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hex col-sm-6  templatemo-hex-top2">
+            <div>
+                <div class="hexagon hexagon2 gallery-item">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(/images/gallery/12.jpg);">
+                            <div class="overlay">
+                                <a href="/images/gallery/12.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hex col-sm-6  templatemo-hex-top3">
+            <div>
+                <div class="hexagon hexagon2 gallery-item">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(/images/gallery/13.jpg);">
+                            <div class="overlay">
+                                <a href="/images/gallery/13.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hex col-sm-6  templatemo-hex-top3">
+            <div>
+                <div class="hexagon hexagon2 gallery-item">
+                    <div class="hexagon-in1">
+                        <div class="hexagon-in2" style="background-image: url(/images/gallery/14.jpg);">
+                            <div class="overlay">
+                                <a href="/images/gallery/14.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="templatemo_loadmore">
