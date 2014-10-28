@@ -22,10 +22,16 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-@RequestMapping("/rest")
+@RequestMapping("/index")
 public class AopController {
     @Autowired
     public AopService aopService;
+
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public String index() {
+        return "index";
+    }
+
 
     @RequestMapping(value = "get", method = RequestMethod.GET)
     public String hello(Model model) {

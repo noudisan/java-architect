@@ -172,13 +172,13 @@
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.15</version>
                 <configuration>
-                    <contextPath>/mvc</contextPath>
+                    <contextPath>/</contextPath>
                     <scanIntervalSeconds>2</scanIntervalSeconds>
                     <stopKey>foo</stopKey>
-                    <stopPort>9001</stopPort>
+                    <stopPort>9999</stopPort>
                     <connectors>
                         <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-                            <port>9000</port>
+                            <port>80</port>
                             <maxIdleTime>60000</maxIdleTime>
                         </connector>
                     </connectors>

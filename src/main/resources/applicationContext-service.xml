@@ -33,6 +33,9 @@
     </bean>
 
     <mvc:resources location="/assets/" mapping="/assets/**"/>
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/fonts/" mapping="/fonts/**"/>
+    <mvc:resources location="/images/" mapping="/images/**"/>
     <mvc:resources location="/js/" mapping="/js/**"/>
 
 	<bean id="viewResolver"
