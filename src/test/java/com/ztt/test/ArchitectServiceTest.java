@@ -6,11 +6,15 @@ import com.ztt.dto.ArchitectDto;
 import com.ztt.dto.ArchitectSearchDto;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
-
-public class ArchitectServiceTest  extends BaseTest{
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:test-applicationContext-dao.xml")
+public class ArchitectServiceTest {
 
     @Autowired
     private ArchitectMapper architectMapper;

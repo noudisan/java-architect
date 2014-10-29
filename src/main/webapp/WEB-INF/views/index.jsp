@@ -17,25 +17,6 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.lightbox.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/templatemo_custom.js"></script>
 
-    <script>
-        function showhide(){
-            var div = document.getElementById("newpost");
-            if (div.style.display !== "none"){
-                div.style.display = "none";
-            }else {
-                div.style.display = "block";
-            }
-
-            var div2 = document.getElementById("newpost2");
-            if (div2.style.display !== "none"){
-                div2.style.display = "none";
-            }else {
-                div2.style.display = "block";
-            }
-
-        }
-    </script>
-
 </head>
 <body>
 <div class="site-header">
@@ -72,6 +53,7 @@
 <div id="menu-container">
 <!-- gallery start -->
 <div class="content homepage" id="menu-1">
+<%--
 
 <div style="display: none" class="container">
     <div class="row templatemorow">
@@ -195,11 +177,12 @@
     </div>
 </div>
 
+--%>
 
 <div id="loadMoreDiv" class="container">
     <div class="row">
         <div class="templatemo_loadmore">
-            <button class="gallery_more" id="button" onClick="showhide()">Load More</button>
+            <button class="gallery_more" id="button" onClick="loadImages()">Load More</button>
         </div>
     </div>
 </div>

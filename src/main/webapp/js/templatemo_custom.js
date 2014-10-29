@@ -104,7 +104,7 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
 }
 var indexPage=0;
-function loadImages(page){
+function loadImages(){
     $.ajax({
         url: "/architect/index?page="+indexPage,
         type: "GET",
@@ -112,7 +112,14 @@ function loadImages(page){
         success: function (data, textStatus, jqXHR) {
             if (data) {
                 indexPage ++;
-                var html ='<div class="container answer_list templatemo_gallerytop"><div class="row templatemorow">';
+                var html ='';
+                if(indexPage == 0){
+
+                    html +='<div  class="container"><div class="row templatemorow">';
+                }else{
+                    html +='<div class="container answer_list templatemo_gallerytop"><div class="row templatemorow">';
+                }
+
                 for(var index in data){
                     var architectDto=data[index];
                     var imagePath =architectDto.imagePath;
@@ -168,4 +175,5 @@ function getDivCss(index){
     }else if(index == 8){
         cssClass="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2";
     }
+    return cssClass;
 }
