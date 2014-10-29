@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztt.dao.ArchitectMapper">
+
+    <resultMap id="architectModel" type="com.ztt.dto.ArchitectDto">
+        <id column="ID" property="id"/>
+        <id column="NAME" property="name"/>
+        <id column="IMAGE_PATH" property="imagePath"/>
+        <id column="REMARKS" property="remarks"/>
+        <id column="TYPE" property="type"/>
+        <id column="CREATE_DATE" property="createDate"/>
+        <id column="STATUS" property="status"/>
+
+    </resultMap>
+
+    <insert id="save" parameterType="com.ztt.dto.ArchitectDto" keyProperty="id">
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        <![CDATA[
+          INSERT INTO TB_ARCHITECT (ID,NAME,IMAGE_PATH,REMARKS,TYPE,CREATE_DATE,STATUS)
+          VALUES (#{id},#{name},#{imagePath},#{remarks},#{type},#{createDate},#{status})
+        ]]>
+    </insert>
+
+    <select id="query" parameterType="com.ztt.dto.ArchitectSearchDto" resultMap="architectModel">
+        select * from TB_ARCHITECT
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="id != null ">
+                <![CDATA[ID = #{id}]]>
+            </if>
+            <if test="name != null and name != '' ">
+                <![CDATA[ AND NAME = #{name}]]>
+            </if>
+        </trim>
+        <![CDATA[ ORDER BY CREATE_DATE DESC ]]>
+    </select>
+
+    <select id="count" parameterType="com.ztt.dto.ArchitectSearchDto" resultType="int">
+        select count(*) from TB_ARCHITECT
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="id != null ">
+                <![CDATA[ID = #{id}]]>
+            </if>
+            <if test="name != null and name != '' ">
+                <![CDATA[ AND NAME = #{name}]]>
+            </if>
+        </trim>
+    </select>
+
+    <delete id="delete" parameterType="long">
+        <![CDATA[
+            delete from TB_ARCHITECT  where ID = #{id}
+        ]]>
+    </delete>
+
+</mapper>
+

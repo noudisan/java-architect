@@ -2,16 +2,13 @@ package com.ztt.controller;
 
 import com.ztt.dto.ExportFileDto;
 import com.ztt.model.ExportFile;
-import com.ztt.model.TradeModel;
 import com.ztt.query.DtPagerResponse;
 import com.ztt.query.DtRequest;
 import com.ztt.query.PagerQueryResult;
 import com.ztt.service.AopService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -42,8 +39,8 @@ public class AopController {
 
     @RequestMapping(value = "/post", method = RequestMethod.POST, consumes = "application/json", produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public String rest(@RequestBody TradeModel tradeModel) {
-        String aa = "aaaaaaaaaaa" + tradeModel.getStatus();
+    public String rest() {
+        String aa = "aaaaaaaaaaa";
         return aa;
     }
 

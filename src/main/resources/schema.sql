@@ -1,11 +1,13 @@
-CREATE TABLE student_tbl
-(
-   student_id         VARCHAR(255) PRIMARY KEY,
-   student_name       VARCHAR(10) NOT NULL,
-   student_sex        VARCHAR(10),
-   student_birthday   DATE,
-   class_id           VARCHAR(255)
-);
+CREATE DATABASE BUILD;
 
-insert into student_tbl (STUDENT_ID, STUDENT_NAME, STUDENT_SEX, STUDENT_BIRTHDAY, CLASS_ID)
-values ('11', 'xiaoming', 'nan', to_date('26-12-2013 15:11:41', 'dd-mm-yyyy hh24:mi:ss'), '1');
+
+CREATE TABLE TB_ARCHITECT
+(
+   ID INT PRIMARY KEY AUTO_INCREMENT,
+   NAME VARCHAR (50),
+   IMAGE_PATH VARCHAR (50),
+   REMARKS VARCHAR (2000),
+   TYPE VARCHAR (30),
+   CREATE_DATE DATE,
+   STATUS VARCHAR (30) default 1
+);
