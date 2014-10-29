@@ -1,7 +1,9 @@
 package com.ztt.service;
 
+import com.ztt.dao.ArchitectMapper;
 import com.ztt.dto.ArchitectDto;
 import com.ztt.dto.ArchitectSearchDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,9 +13,11 @@ import java.util.List;
  */
 @Service
 public class ArchitectService {
+    @Autowired
+    private ArchitectMapper architectMapper;
 
     public List<ArchitectDto> search(ArchitectSearchDto architectSearchDto) {
 
-        return null;
+        return architectMapper.query(architectSearchDto);
     }
 }
