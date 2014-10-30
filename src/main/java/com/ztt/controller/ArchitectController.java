@@ -15,13 +15,14 @@ import java.util.List;
 @Controller
 @RequestMapping("/architect")
 public class ArchitectController {
+    private static Integer pageSize=9;
     @Autowired
     private ArchitectService architectService;
 
     @RequestMapping(value = "index", method = RequestMethod.GET)
     @ResponseBody
     public List<ArchitectDto> index(ArchitectSearchDto architectSearchDto, @RequestParam(value = "page", required = false) Integer page) {
-        architectSearchDto.setPageSize(7);
+        architectSearchDto.setPageSize(pageSize);
         architectSearchDto.setCurrentPage(0);
         if (page != null) {
             architectSearchDto.setCurrentPage(page);

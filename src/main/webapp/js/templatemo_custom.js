@@ -73,9 +73,9 @@ jQuery(document).ready(function($){
 	);
 
 	/************** LightBox *********************/
-	$(function(){
-		$('[data-rel="lightbox"]').lightbox();
-	});
+	/*$(function(){
+        $('[data-rel="lightbox"]').lightbox();
+    });*/
 
 	$("a.menu-toggle-btn").click(function() {
 	  $(".responsive_menu").stop(true,true).slideToggle();
@@ -108,13 +108,13 @@ function loadImages(){
     $.ajax({
         url: "/architect/index?page="+indexPage,
         type: "GET",
+        async:false,
         dataType:"json",
         success: function (data, textStatus, jqXHR) {
             if (data) {
                 indexPage ++;
                 var html ='';
                 if(indexPage == 0){
-
                     html +='<div  class="container"><div class="row templatemorow">';
                 }else{
                     html +='<div class="container answer_list templatemo_gallerytop"><div class="row templatemorow">';
@@ -147,6 +147,8 @@ function loadImages(){
                 html +='</div></div>';
                 $("#loadMoreDiv").before(html);
             }
+
+            $('[data-rel="lightbox"]').lightbox();
         },
         error: function (jqXHR, textStatus, errorThrown) {
             alert(jqXHR);
