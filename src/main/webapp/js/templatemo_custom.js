@@ -26,36 +26,49 @@ jQuery(document).ready(function($){
 		$(this).addClass('active');
 		$(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").removeClass('active');
 		$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
+		$(".main_menu a.templatemo_page4, .responsive_menu a.templatemo_page4").removeClass('active');
 		$(".main_menu a.templatemo_page5, .responsive_menu a.templatemo_page5").removeClass('active');
 		return false;
 	});
 
 	$(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").click(function(){
-		$("#menu-container .team").addClass("animated fadeInDown").show();
+		$("#menu-container .service").addClass("animated fadeInDown").show();
 		$(this).addClass('active');
 		$(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
 		$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
+		$(".main_menu a.templatemo_page4, .responsive_menu a.templatemo_page4").removeClass('active');
 		$(".main_menu a.templatemo_page5, .responsive_menu a.templatemo_page5").removeClass('active');
 		return false;
 	});
 
 	$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").click(function(){
-		$("#menu-container .services").addClass("animated fadeInDown").show();
-		$(".our-services").show();
-		$(this).addClass('active');
-		$(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").removeClass('active');
-		$(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
+        $("#menu-container .belief").addClass("animated fadeInDown").show();
+        $(this).addClass('active');
+        $(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
+        $(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").removeClass('active');
+        $(".main_menu a.templatemo_page4, .responsive_menu a.templatemo_page4").removeClass('active');
 		$(".main_menu a.templatemo_page5, .responsive_menu a.templatemo_page5").removeClass('active');
 		return false;
 	});
 
+    $(".main_menu a.templatemo_page4, .responsive_menu a.templatemo_page4").click(function(){
+        $("#menu-container .team").addClass("animated fadeInDown").show();
+        $(this).addClass('active');
+        $(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
+        $(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").removeClass('active');
+        $(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
+        $(".main_menu a.templatemo_page5, .responsive_menu a.templatemo_page5").removeClass('active');
+        return false;
+    });
+
 	$(".main_menu a.templatemo_page5, .responsive_menu a.templatemo_page5").click(function(){
 		$("#menu-container .contact").addClass("animated fadeInDown").show();
 		$(this).addClass('active');
-		$(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").removeClass('active');
-		$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
-		$(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
-		
+        $(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
+        $(".main_menu a.templatemo_page2, .responsive_menu a.templatemo_page2").removeClass('active');
+        $(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
+        $(".main_menu a.templatemo_page4, .responsive_menu a.templatemo_page4").removeClass('active');
+
 		loadScript();
 		return false;
 	});
@@ -99,7 +112,7 @@ function loadScript() {
 function initialize() {
     var mapOptions = {
       zoom: 12,
-      center: new google.maps.LatLng(40.7823234,-73.9654161)
+      center: new google.maps.LatLng(39.915,116.404)
     };
     var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
 }
@@ -111,15 +124,15 @@ function loadImages(){
         async:false,
         dataType:"json",
         success: function (data, textStatus, jqXHR) {
-            if (data) {
-                indexPage ++;
+            if (data && data.length !=0 ) {
+
                 var html ='';
                 if(indexPage == 0){
-                    html +='<div  class="container"><div class="row templatemorow">';
+                    html +='<div  class="container" ><div class="row templatemorow">';
                 }else{
                     html +='<div class="container answer_list templatemo_gallerytop"><div class="row templatemorow">';
                 }
-
+                indexPage ++;
                 for(var index in data){
                     var architectDto=data[index];
                     var imagePath =architectDto.imagePath;
@@ -146,6 +159,8 @@ function loadImages(){
                 }
                 html +='</div></div>';
                 $("#loadMoreDiv").before(html);
+            }else{
+                $(".gallery_more").text('浏览完毕');
             }
 
             $('[data-rel="lightbox"]').lightbox();
