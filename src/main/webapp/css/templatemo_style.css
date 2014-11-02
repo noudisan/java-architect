@@ -254,7 +254,7 @@ a.menu-toggle-btn {
 }
 .templatemo_servicetext	{ float: left; margin-top: 230px; }
 .templatemo_hexservices	{ width: 20%; margin-top: -10%; }
-.templatemo_hexservices p{ text-align: center; }
+.templatemo_hexservices p{ text-align: left; }
 
 /* mid hexa */
 .hexa-a {

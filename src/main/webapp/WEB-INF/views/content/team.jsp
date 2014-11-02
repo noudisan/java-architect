@@ -6,74 +6,85 @@
     <div class="container">
         <div class="row templatemo_servicerow" >
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/huhaiming.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
                     <h3>胡海明</h3>
-                    <p>高级建筑师, aliquet et sagittis ac, facilisis nec massa. Suspendisse sagittis leo diam,
-                        sed dapibus eros vehicula eu. Aenean nulla magna, gravida at dui in, fringilla vestibulum massa.</p>
+                    <p>益铭房舍设计工作室创立人、合伙人<br>
+                        曾在北京三磊设计有限公司、中国中元国际工程有限公司工作<br>
+                        毕业于东方学院，建筑学专业<br>
+                        曾获得优秀建筑设计奖、优秀规划设计奖</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/zhoushuo.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
-                    <h3>Aliquam faucibus</h3>
-                    <p>Vivamus a purus vel ante fermentum bibendum. Sed laoreet, enim quis euismod egestas,
-                        risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat.</p>
+                    <h3>周  铄</h3>
+                    <p>合伙人、设计总监<br>
+                        曾在中冶建筑研究总院有限公司、
+                        中国中元国际工程有限公司工作<br>
+                        毕业于北京交通大学，建筑学硕士学位<br>
+                        荷兰图恩特大学城市规划专业交换生</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/zhoushanshan.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
-                    <h3>Donec sagittis</h3>
-                    <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem.
-                        Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris semper, id iaculis felis condimentum.</p>
+                    <h3>周珊珊</h3>
+                    <p>合伙人、建筑师<br>
+                        曾在北京市建筑设计研究院、
+                        中国中元国际工程有限公司工作<br>
+                        毕业于中国石油大学，建筑学专业<br>
+                        曾获优秀建筑设计奖</p>
                 </div>
             </div>
 
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/guolei.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
-                    <h3>Integer tempus</h3>
-                    <p>Maecenas porttitor erat et enim dapibus, sit amet accumsan velit tincidunt. Etiam sapien urna,
-                        suscipit ut purus ac, convallis pulvinar tellus. In eu neque purus. Donec cursus dictum pulvinar.</p>
+                    <h3>郭  磊</h3>
+                    <p>合伙人、建筑师<br>
+                        曾在北京市建筑设计研究院、
+                        北京三磊建筑设计有限公司工作<br>
+                        毕业于河北大学，建筑学专业</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/zhangjiahui.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
-                    <h3>Aliquam pellentesque</h3>
-                    <p>Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus,
-                        vel pharetra neque enim tristique risus. Ut consequat nisi vel justo. Curabitur in orci vel enim congue cursus.</p>
+                    <h3>张家辉</h3>
+                    <p>合伙人、结构设计总监<br>
+                        曾就职于北京三磊建筑设计有限公司
+                        毕业于青岛理工大学，土木工程专业</p>
                 </div>
             </div>
 
@@ -82,31 +93,39 @@
 
         <div class="row templatemo_servicerow" style="margin-top: 12%">
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/yulili.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
-                    <h3>胡海明</h3>
-                    <p>高级建筑师, aliquet et sagittis ac, facilisis nec massa. Suspendisse sagittis leo diam,
-                        sed dapibus eros vehicula eu. Aenean nulla magna, gravida at dui in, fringilla vestibulum massa.</p>
+                    <h3>于丽丽</h3>
+                    <p>合伙人、电气设计总监<br>
+                        曾就职于中国建筑科学研究院、
+                        北京三磊建筑设计有限公司 高级电气工程师<br>
+                        毕业于吉林建筑大学，电气工程及其自动化专业<br>
+                        代表作品：北京丽都水岸住宅小区、
+                        西安浐灞三角洲地块电气规划、
+                        泰州万达广场及住宅电气设计、
+                        保定炫彩SOHO电气设计等</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="col-md-3 col-sm-4">
+                <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(/images/team/shantianhong.jpg);"></div>
                         </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
-                    <h3>Aliquam faucibus</h3>
-                    <p>Vivamus a purus vel ante fermentum bibendum. Sed laoreet, enim quis euismod egestas,
-                        risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat.</p>
+                    <h3>单天红</h3>
+                    <p>合伙人、暖通设计总监、给排水设计总监<br>
+                        曾在中外建建筑设计有限公司、
+                        希埃希建筑设计有限公司工作<br>
+                        毕业于长春工程学院,建筑环境与设备工程专业</p>
                 </div>
             </div>
 
