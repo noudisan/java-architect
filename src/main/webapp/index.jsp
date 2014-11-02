@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title>Polygon - Free HTML5 Template</title>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,9 +17,11 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
     <script>
-        function showhide() {
+        function showhide()
+        {
             var div = document.getElementById("newpost");
-            if (div.style.display !== "none") {
+            if (div.style.display !== "none")
+            {
                 div.style.display = "none";
             }
             else {
@@ -29,6 +31,7 @@
     </script>
 
 </head>
+
 <body>
 <div class="site-header">
     <div class="main-navigation">
@@ -46,8 +49,7 @@
                     <a href="#" class="menu-toggle-btn">
                         <i class="fa fa-bars"></i>
                     </a>
-                </div>
-                <!-- /.col-md-12 -->
+                </div> <!-- /.col-md-12 -->
                 <div class="col-md-3 col-sm-12">
                     <a href="#"><img src="images/templatemo_logo.jpg" alt="Polygon Template"></a>
                 </div>
@@ -66,16 +68,12 @@
                             <span class="fa fa-envelope"></span>
                             Contact</a></li>
                     </ul>
-                </div>
-                <!-- /.col-md-12 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.main-navigation -->
-</div>
-<!-- /.site-header -->
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.main-navigation -->
+</div> <!-- /.site-header -->
+
 <div id="menu-container">
 <!-- gallery start -->
 <div class="content homepage" id="menu-1">
@@ -200,8 +198,7 @@
         </div>
     </div>
 </div>
-
-<div id="newpost" style="display:none;" class="container answer_list templatemo_gallerytop">
+<div  id="newpost" style="display:none;" class="container answer_list templatemo_gallerytop">
     <div class="row templatemorow">
         <div class="hex col-sm-6">
             <div>
@@ -307,22 +304,9 @@
                 </div>
             </div>
         </div>
-        <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
-            <div>
-                <div class="hexagon hexagon2 gallery-item">
-                    <div class="hexagon-in1">
-                        <div class="hexagon-in2" style="background-image: url(images/gallery/18.jpg);">
-                            <div class="overlay">
-                                <a href="images/gallery/18.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="templatemo_loadmore">
@@ -375,13 +359,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
                     <h2>Free Template</h2>
-
-                    <p>Polygon is <a href="#">free HTML5 template</a> by templatemo that can be used for any purpose.
-                        Cras lobortis, ligula ut hendrerit condimentum, magna lorem lobortis nisi, ac suscipit nunc est
-                        vitae turpis. Nullam vulputate nec nulla sed fringilla. Aliquam tempus consectetur diam, in
-                        suscipit turpis pulvinar at.</p>
+                    <p>Polygon is <a href="#">free HTML5 template</a> by templatemo that can be used for any purpose. Cras lobortis, ligula ut hendrerit condimentum, magna lorem lobortis nisi, ac suscipit nunc est vitae turpis. Nullam vulputate nec nulla sed fringilla. Aliquam tempus consectetur diam, in suscipit turpis pulvinar at.</p>
                 </div>
                 <div class="templatemo_servicecol2">
                     <div class="col-md-3 col-sm-4">
@@ -425,11 +405,7 @@
                     </div>
                     <div class="col-md-3 col-sm-8 templatemo_servicetxt">
                         <h2>Responsive Design</h2>
-
-                        <p>This layout is a <a href="#">mobile template</a> which is compatible with tablets and mobile
-                            phones. Mauris eget neque at sapien faucibus egestas vel vitae mi. Maecenas commodo augue
-                            risus, sed placerat neque feugiat vel. Fusce augue urna, faucibus et nulla bibendum, luctus
-                            porttitor nulla.</p>
+                        <p>This layout is a <a href="#">mobile template</a> which is compatible with tablets and mobile phones. Mauris eget neque at sapien faucibus egestas vel vitae mi. Maecenas commodo augue risus, sed placerat neque feugiat vel. Fusce augue urna, faucibus et nulla bibendum, luctus porttitor nulla.</p>
                     </div>
                 </div>
             </div>
@@ -475,12 +451,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
                     <h2>Mobile Ready</h2>
-
-                    <p>Sed laoreet, enim quis euismod egestas, risus tortor tincidunt lacus, in iaculis mauris lectus at
-                        augue. Donec luctus nibh nec ullamcorper feugiat. Phasellus felis urna, lobortis vitae lacus sit
-                        amet, tristique consectetur nibh.</p>
+                    <p>Sed laoreet, enim quis euismod egestas, risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat. Phasellus felis urna, lobortis vitae lacus sit amet, tristique consectetur nibh.</p>
                 </div>
                 <div class="templatemo_servicecol2">
                     <div class="col-md-3 col-sm-4">
@@ -523,10 +496,7 @@
                     </div>
                     <div class="col-md-3 col-sm-8 templatemo_servicetxt">
                         <h2>Lorem ipsum dolor</h2>
-
-                        <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem.
-                            Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris
-                            semper, id iaculis felis condimentum.</p>
+                        <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem. Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris semper, id iaculis felis condimentum.</p>
                     </div>
                 </div>
             </div>
@@ -567,10 +537,7 @@
                 </div>
                 <div class="templatemo_servicetext">
                     <h3>Etiam vulputate</h3>
-
-                    <p>Vestibulum diam lorem, aliquet et sagittis ac, facilisis nec massa. Suspendisse sagittis leo
-                        diam, sed dapibus eros vehicula eu. Aenean nulla magna, gravida at dui in, fringilla vestibulum
-                        massa.</p>
+                    <p>Vestibulum diam lorem, aliquet et sagittis ac, facilisis nec massa. Suspendisse sagittis leo diam, sed dapibus eros vehicula eu. Aenean nulla magna, gravida at dui in, fringilla vestibulum massa.</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
@@ -600,10 +567,7 @@
                 </div>
                 <div class="templatemo_servicetext">
                     <h3>Aliquam faucibus</h3>
-
-                    <p>Vivamus a purus vel ante fermentum bibendum. Sed laoreet, enim quis euismod egestas, risus tortor
-                        tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper
-                        feugiat.</p>
+                    <p>Vivamus a purus vel ante fermentum bibendum. Sed laoreet, enim quis euismod egestas, risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat.</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
@@ -633,13 +597,10 @@
                 </div>
                 <div class="templatemo_servicetext">
                     <h3>Donec sagittis</h3>
-
-                    <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem.
-                        Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris
-                        semper, id iaculis felis condimentum.</p>
+                    <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem. Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris semper, id iaculis felis condimentum.</p>
                 </div>
             </div>
-            <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
+            <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
             <div class="templatemo_hexservices col-sm-6">
                 <div class="blok text-center">
                     <div class="hexagon-a">
@@ -667,10 +628,7 @@
                 </div>
                 <div class="templatemo_servicetext">
                     <h3>Integer tempus</h3>
-
-                    <p>Maecenas porttitor erat et enim dapibus, sit amet accumsan velit tincidunt. Etiam sapien urna,
-                        suscipit ut purus ac, convallis pulvinar tellus. In eu neque purus. Donec cursus dictum
-                        pulvinar.</p>
+                    <p>Maecenas porttitor erat et enim dapibus, sit amet accumsan velit tincidunt. Etiam sapien urna, suscipit ut purus ac, convallis pulvinar tellus. In eu neque purus. Donec cursus dictum pulvinar.</p>
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
@@ -700,10 +658,7 @@
                 </div>
                 <div class="templatemo_servicetext">
                     <h3>Aliquam pellentesque</h3>
-
-                    <p>Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus,
-                        vel pharetra neque enim tristique risus. Ut consequat nisi vel justo. Curabitur in orci vel enim
-                        congue cursus.</p>
+                    <p>Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus. Ut consequat nisi vel justo. Curabitur in orci vel enim congue cursus.</p>
                 </div>
             </div>
 
@@ -724,10 +679,7 @@
             <div class="col-md-3 col-sm-12 leftalign">
                 <div class="templatemo_contacttitle">Contact Information</div>
                 <div class="clear"></div>
-                <p>Integer eu neque sed mi fringilla pellentesque a eget leo. Duis ornare diam lorem, sit amet tempor
-                    mauris fringilla in. Etiam semper tempus augue, at vehicula metus. Nam vestibulum tortor nec congue
-                    ornare.</p>
-
+                <p>Integer eu neque sed mi fringilla pellentesque a eget leo. Duis ornare diam lorem, sit amet tempor mauris fringilla in. Etiam semper tempus augue, at vehicula metus. Nam vestibulum tortor nec congue ornare.</p>
                 <div class="templatemo_address">
                     <ul>
                         <li class="left fa fa-map-marker"></li>
@@ -744,30 +696,25 @@
             <div class="col-md-5 col-sm-12">
                 <form role="form">
                     <div class="templatemo_form">
-                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name"
-                               maxlength="40">
+                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email"
-                               maxlength="40">
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject"
-                               maxlength="40">
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <textarea name="message" rows="10" class="form-control" id="message"
-                                  placeholder="Message"></textarea>
+                        <textarea name="message" rows="10" class="form-control" id="message" placeholder="Message"></textarea>
                     </div>
-                    <div class="templatemo_form">
-                        <button type="button" class="btn btn-primary">Send Message</button>
-                    </div>
+                    <div class="templatemo_form"><button type="button" class="btn btn-primary">Send Message</button></div>
                 </form>
             </div>
         </div>
 
     </div>
 </div>
+
 </div>
 <!-- contact end -->
 <!-- footer start -->
@@ -776,9 +723,8 @@
         <div class="row">
             <div class="col-md-9 col-sm-12">Copyright &copy; 2084 Company Name |
                 <a href="http://www.cssmoban.com/">HTML5 Template</a> Collect from
-                <a href="http://www.cssmoban.com/">网站模板</a> |
-                <a rel="nofollow" href="#">Photos</a> by Unsplash
-            </div>
+                <a  href="http://www.cssmoban.com/">网站模板</a> |
+                <a rel="nofollow" href="#">Photos</a> by Unsplash</div>
             <div class="col-md-3 col-sm-12 templatemo_rfooter">
                 <a href="#">
                     <div class="hex_footer">
@@ -806,10 +752,10 @@
 </div>
 <!-- footer end -->
 <script>
-    $('.gallery_more').click(function () {
+    $('.gallery_more').click(function(){
         var $this = $(this);
         $this.toggleClass('gallery_more');
-        if ($this.hasClass('gallery_more')) {
+        if($this.hasClass('gallery_more')){
             $this.text('Load More');
         } else {
             $this.text('Load Less');
@@ -817,4 +763,6 @@
     });
 </script>
 </body>
+
+
 </html>

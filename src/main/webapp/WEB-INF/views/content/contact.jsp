@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <!-- contact start -->
-<div class="content contact" id="menu-5">
+<div class="content contact" id="menu-5"  style="margin-top: 5%">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-12">
@@ -49,5 +49,3 @@
 
     </div>
 </div>
-
-<!-- contact end -->

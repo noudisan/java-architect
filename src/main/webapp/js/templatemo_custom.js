@@ -15,9 +15,9 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
-	$( window ).load(function() {
-	  $("#menu-container .products").hide();
-	});
+//	$( window ).load(function() {
+//	  $("#menu-container .products").hide();
+//	});
 
 	$(".main_menu a.templatemo_home").addClass('active');
 
@@ -69,7 +69,7 @@ jQuery(document).ready(function($){
         $(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
         $(".main_menu a.templatemo_page4, .responsive_menu a.templatemo_page4").removeClass('active');
 
-		loadScript();
+	    //loadScript();
 		return false;
 	});
 
