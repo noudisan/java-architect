@@ -6,28 +6,11 @@
     <div class="container">
         <div class="row templatemo_servicerow" >
             <div class="templatemo_hexservices col-sm-6">
-                <div class="blok text-center" >
-                    <div class="hexagon-a">
-                        <a class="hlinktop" href="#">
-                            <div class="hexa-a">
-                                <div class="hcontainer-a">
-                                    <div class="vertical-align-a">
-                                        <span class="texts-a"><i class="fa fa-bell"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagonservices">
-                        <a class="hlinkbott" href="#">
-                            <div class="hexa">
-                                <div class="hcontainer">
-                                    <div class="vertical-align">
-                                        <span class="texts"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
@@ -37,28 +20,11 @@
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="blok text-center">
-                    <div class="hexagon-a">
-                        <a class="hlinktop" href="#">
-                            <div class="hexa-a">
-                                <div class="hcontainer-a">
-                                    <div class="vertical-align-a">
-                                        <span class="texts-a"><i class="fa fa-briefcase"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagonservices">
-                        <a class="hlinkbott" href="#">
-                            <div class="hexa">
-                                <div class="hcontainer">
-                                    <div class="vertical-align">
-                                        <span class="texts"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
@@ -68,28 +34,11 @@
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="blok text-center">
-                    <div class="hexagon-a">
-                        <a class="hlinktop" href="#">
-                            <div class="hexa-a">
-                                <div class="hcontainer-a">
-                                    <div class="vertical-align-a">
-                                        <span class="texts-a"><i class="fa fa-mobile"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagonservices">
-                        <a class="hlinkbott" href="#">
-                            <div class="hexa">
-                                <div class="hcontainer">
-                                    <div class="vertical-align">
-                                        <span class="texts"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
@@ -100,28 +49,11 @@
             </div>
 
             <div class="templatemo_hexservices col-sm-6">
-                <div class="blok text-center">
-                    <div class="hexagon-a">
-                        <a class="hlinktop" href="#">
-                            <div class="hexa-a">
-                                <div class="hcontainer-a">
-                                    <div class="vertical-align-a">
-                                        <span class="texts-a"><i class="fa fa-trophy"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagonservices">
-                        <a class="hlinkbott" href="#">
-                            <div class="hexa">
-                                <div class="hcontainer">
-                                    <div class="vertical-align">
-                                        <span class="texts"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
@@ -131,28 +63,11 @@
                 </div>
             </div>
             <div class="templatemo_hexservices col-sm-6">
-                <div class="blok text-center">
-                    <div class="hexagon-a">
-                        <a class="hlinktop" href="#">
-                            <div class="hexa-a">
-                                <div class="hcontainer-a">
-                                    <div class="vertical-align-a">
-                                        <span class="texts-a"><i class="fa fa-thumb-tack"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagonservices">
-                        <a class="hlinkbott" href="#">
-                            <div class="hexa">
-                                <div class="hcontainer">
-                                    <div class="vertical-align">
-                                        <span class="texts"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="templatemo_servicetext">
@@ -163,5 +78,41 @@
             </div>
 
         </div>
+
+
+        <div class="row templatemo_servicerow" style="margin-top: 12%">
+            <div class="templatemo_hexservices col-sm-6">
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="templatemo_servicetext">
+                    <h3>胡海明</h3>
+                    <p>高级建筑师, aliquet et sagittis ac, facilisis nec massa. Suspendisse sagittis leo diam,
+                        sed dapibus eros vehicula eu. Aenean nulla magna, gravida at dui in, fringilla vestibulum massa.</p>
+                </div>
+            </div>
+            <div class="templatemo_hexservices col-sm-6">
+                <div class="col-md-3 col-sm-4">
+                    <div class="hexagon hexagonteam gallery-item">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2" style="background-image: url(/images/service/1.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="templatemo_servicetext">
+                    <h3>Aliquam faucibus</h3>
+                    <p>Vivamus a purus vel ante fermentum bibendum. Sed laoreet, enim quis euismod egestas,
+                        risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
     </div>
 </div>
