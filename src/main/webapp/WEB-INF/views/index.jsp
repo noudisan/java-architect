@@ -19,6 +19,7 @@
 
 </head>
 <body>
+<input type="hidden" id="imageHead" value="${imageHead}">
 <div class="site-header">
     <div class="main-navigation">
         <div class="responsive_menu">

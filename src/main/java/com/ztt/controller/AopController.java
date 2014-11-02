@@ -25,17 +25,13 @@ public class AopController {
     public AopService aopService;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public String index() {
+    public String index(  Model model) {
+        model.addAttribute("imageHead","http://localhost:88");
+
         return "index";
     }
 
 
-    @RequestMapping(value = "get", method = RequestMethod.GET)
-    public String hello(Model model) {
-        model.addAttribute("name", "name");
-        String aa = "hello";
-        return aa;
-    }
 
     @RequestMapping(value = "/post", method = RequestMethod.POST, consumes = "application/json", produces = "application/json;charset=UTF-8")
     @ResponseBody

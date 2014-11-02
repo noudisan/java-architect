@@ -28,7 +28,7 @@ public class ArchitectServiceTest {
             architectDto.setCreateDate(new Date());
             architectDto.setRemarks("image remark" + i);
             architectDto.setType("IMAGE");
-            architectDto.setImagePath("http://localhost/images/gallery/"+i+".jpg");
+            architectDto.setImagePath("/images/gallery/"+i+".jpg");
             Long result = architectMapper.save(architectDto);
             System.out.println(result);
         }

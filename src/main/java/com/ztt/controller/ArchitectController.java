@@ -5,6 +5,8 @@ import com.ztt.dto.ArchitectSearchDto;
 import com.ztt.service.ArchitectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,7 +23,10 @@ public class ArchitectController {
 
     @RequestMapping(value = "index", method = RequestMethod.GET)
     @ResponseBody
-    public List<ArchitectDto> index(ArchitectSearchDto architectSearchDto, @RequestParam(value = "page", required = false) Integer page) {
+    public List<ArchitectDto> index(ArchitectSearchDto architectSearchDto,
+                                    Model model,
+                                    @RequestParam(value = "page", required = false) Integer page) {
+
         architectSearchDto.setPageSize(pageSize);
         architectSearchDto.setCurrentPage(0);
         if (page != null) {

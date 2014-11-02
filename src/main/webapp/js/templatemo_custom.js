@@ -135,7 +135,7 @@ function loadImages(){
                 indexPage ++;
                 for(var index in data){
                     var architectDto=data[index];
-                    var imagePath =architectDto.imagePath;
+                    var imagePath =$("#imageHead").val()+ architectDto.imagePath;
                     var cssClass ="";
                     if(parseInt(index)<9){
                         cssClass=getDivCss(parseInt(index))
