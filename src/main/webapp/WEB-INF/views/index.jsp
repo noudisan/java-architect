@@ -84,22 +84,21 @@
 <div class="templatemo_footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-sm-12">Copyright &copy; 2084 Company Name |
-                <a href="http://www.cssmoban.com/">HTML5 Template</a> Collect from
-                <a  href="http://www.cssmoban.com/">网站模板</a> |
-                <a rel="nofollow" href="#">Photos</a> by Unsplash</div>
+            <div class="col-md-9 col-sm-12">Copyright &copy; 2014 - 2014 |
+                <a  href="#">益铭设计</a> |
+            </div>
             <div class="col-md-3 col-sm-12 templatemo_rfooter">
                 <a href="#">
-                    <div class="hex_footer"><span class="fa fa-facebook"></span></div>
+                    <div class="hex_footer"></div>
                 </a>
                 <a href="#">
-                    <div class="hex_footer"><span class="fa fa-twitter"></span></div>
+                    <div class="hex_footer"></div>
                 </a>
                 <a href="#">
-                    <div class="hex_footer"><span class="fa fa-linkedin"></span></div>
+                    <div class="hex_footer"></div>
                 </a>
                 <a href="#">
-                    <div class="hex_footer"><span class="fa fa-rss"></span></div>
+                    <div class="hex_footer"></div>
                 </a>
             </div>
         </div>
