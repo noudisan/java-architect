@@ -43,7 +43,7 @@
                     <ul>
                         <li><a class="show-1 templatemo_home" href="#"><span ></span>项目<br>Projects</a></li>
                         <li><a class="show-2 templatemo_page2" href="#"><span ></span>服务<br>Services</a></li>
-                        <li><a class="show-3 templatemo_page3" href="#"><span ></span><br>理念<br>Ideas</a></li>
+                        <li><a class="show-3 templatemo_page3" href="#"><span ></span>理念<br>Ideas</a></li>
                         <li><a class="show-4 templatemo_page4" href="#"><span ></span>团队<br>Team</a></li>
                         <li><a class="show-5 templatemo_page5" href="#"><span ></span>联络<br>Contact</a></li>
                     </ul>
