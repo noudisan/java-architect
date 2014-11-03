@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div style="width:500px;height:500px;
-                background: url(/images/belief/belief.jpg) no-repeat;"></div>
+                background: url(/images/ideas/ideas.jpg) no-repeat;"></div>
 
                 <div style="height: 388px;">
                     我们怀着满腔热情投身于建筑设计领域，我们希望摒弃以经济利益为核心的传统工作模式，我们希望把精力放在营造我们的生活环境之上。我们通过理性的分析、感性的热爱，以及沟通，找出最可行的设计方向。<br/>

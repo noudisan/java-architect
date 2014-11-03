@@ -26,7 +26,7 @@
             <ul>
                 <li><a class="show-1 templatemo_home" href="#">项目</a></li>
                 <li><a class="show-2 templatemo_page2" href="#">服务</a></li>
-                <li><a class="show-3 templatemo_page3" href="#">信念</a></li>
+                <li><a class="show-3 templatemo_page3" href="#">理念</a></li>
                 <li><a class="show-4 templatemo_page4" href="#">团队</a></li>
                 <li><a class="show-5 templatemo_page5" href="#">联络</a></li>
             </ul>
@@ -37,15 +37,15 @@
                     <a href="#" class="menu-toggle-btn"><i class="fa fa-bars"></i></a>
                 </div> <!-- /.col-md-12 -->
                 <div class="col-md-3 col-sm-12">
-                    <a href="#"><img src="images/templatemo_logo.jpg" alt="Polygon Template"></a>
+                    <a href="/"><img src="images/templatemo_logo.png" alt="Polygon Template"></a>
                 </div>
                 <div class="col-md-9 main_menu">
                     <ul>
-                        <li><a class="show-1 templatemo_home" href="#"><span class="fa fa-camera"></span>项目</a></li>
-                        <li><a class="show-2 templatemo_page2" href="#"><span class="fa fa-users"></span>服务</a></li>
-                        <li><a class="show-3 templatemo_page3" href="#"><span class="fa fa-cogs"></span>信念</a></li>
-                        <li><a class="show-4 templatemo_page4" href="#"><span class="fa fa-cogs"></span>团队</a></li>
-                        <li><a class="show-5 templatemo_page5" href="#"><span class="fa fa-envelope"></span>联络</a></li>
+                        <li><a class="show-1 templatemo_home" href="#"><span ></span>项目<br>Projects</a></li>
+                        <li><a class="show-2 templatemo_page2" href="#"><span ></span>服务<br>Services</a></li>
+                        <li><a class="show-3 templatemo_page3" href="#"><span ></span><br>理念<br>Ideas</a></li>
+                        <li><a class="show-4 templatemo_page4" href="#"><span ></span>团队<br>Team</a></li>
+                        <li><a class="show-5 templatemo_page5" href="#"><span ></span>联络<br>Contact</a></li>
                     </ul>
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
@@ -70,7 +70,7 @@
     <jsp:include page="content/service.jsp"></jsp:include>
     <div class="clear"></div>
 
-    <jsp:include page="content/belief.jsp"></jsp:include>
+    <jsp:include page="content/idea.jsp"></jsp:include>
     <%--<div class="clear"></div>--%>
 
     <jsp:include page="content/team.jsp"></jsp:include>

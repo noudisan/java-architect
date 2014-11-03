@@ -7,42 +7,63 @@
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <div class="templatemo_contactmap">
-                    <div id="templatemo_map"></div>
+                    <<div id="templatemo_map"></div>
                     <img src="images/templatemo_contactiframe.png" alt="contact map">
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12 leftalign">
-                <div class="templatemo_contacttitle">Contact Information</div>
+            <div class="col-md-4 col-sm-12 leftalign">
+                <div class="templatemo_contacttitle">联系方式</div>
                 <div class="clear"></div>
-                <p>Integer eu neque sed mi fringilla pellentesque a eget leo. Duis ornare diam lorem, sit amet tempor mauris fringilla in. Etiam semper tempus augue, at vehicula metus. Nam vestibulum tortor nec congue ornare.</p>
                 <div class="templatemo_address">
                     <ul>
                         <li class="left fa fa-map-marker"></li>
-                        <li class="right">Nulla ut tellus, sit amet urna, <br>scelerisque pretium 10560</li>
+                        <li class="right">北京市海淀区羊坊店东路北蜂窝103号院7号楼402 室</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-user"></li>
+                        <li class="right">设计部：胡海明</li>
                         <li class="clear"></li>
                         <li class="left fa fa-phone"></li>
-                        <li class="right">010-040-0260</li>
+                        <li class="right">18611516653</li>
                         <li class="clear"></li>
                         <li class="left fa fa-envelope"></li>
-                        <li class="right">info@company.com</li>
+                        <li class="right">hhmyx@163.com</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-user"></li>
+                        <li class="right">业务部：董伟</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-phone"></li>
+                        <li class="right">18311224468</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-envelope"></li>
+                        <li class="right">age23@163.com</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-user"></li>
+                        <li class="right">人事部：周珊珊</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-phone"></li>
+                        <li class="right">18611146653</li>
+                        <li class="clear"></li>
+                        <li class="left fa fa-envelope"></li>
+                        <li class="right">zero_1216@126.com</li>
+                        <li class="clear"></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-4 col-sm-12">
                 <form role="form">
                     <div class="templatemo_form">
-                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="40">
+                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="姓名" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" maxlength="40">
+                        <input name="email" type="text" class="form-control" id="email" placeholder="手机号或邮箱" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" maxlength="40">
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="主题" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <textarea name="message" rows="10" class="form-control" id="message" placeholder="Message"></textarea>
+                        <textarea name="message" rows="10" class="form-control" id="message" placeholder="内容"></textarea>
                     </div>
-                    <div class="templatemo_form"><button type="button" class="btn btn-primary">Send Message</button></div>
+                    <div class="templatemo_form"><button type="button" class="btn btn-primary">发送信息</button></div>
                 </form>
             </div>
         </div>

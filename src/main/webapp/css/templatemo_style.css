@@ -4,8 +4,9 @@ html, body {
     font-family: Tahoma, Arial;
     padding: 0px;
     margin: 0px;
-    color: #e7e7e7;
-    background: #393e42;
+    color: #343537;
+    /*background: #393e42;*/
+    background: url(../images/background/background.jpg);
     font-size: 12px;
 }
 
@@ -26,7 +27,7 @@ a:active, a:focus {
 button:focus { border: none; outline:none; }
 
 p {
-    color: #aeb5ba;
+    color: #343537;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,11 +78,11 @@ span.fa	{ width: 100%; text-align: center; }
     display: inline-block;
     color: white;
     font-size: 16px;
-    background: #343536;
+   /* background: #343536;*/
     text-transform: uppercase;
 }
 .site-header .main-navigation ul li a.active {
-    color: #b69e40;
+    color: #a82f00;
     text-decoration: none;
 }
 .site-header .templatemo_logo {
@@ -424,7 +425,8 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
     color: #2a2a2a;
     width: 32px;
     height: 32px;
-    background-color: #d3b850;
+    /*background-color: #d3b850;*/
+    background-color: #a82f00;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -444,7 +446,8 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
 .templatemo_loadmore	{
     margin: 0 auto;
     padding: 7px 0px;
-    background: #b79e41;
+    /*background: #b79e41;*/
+    background: #3276b1;
     margin-top: 15%;
     text-align: center;
     font-size: 16px;
@@ -454,14 +457,15 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
 
 .templatemo_loadmore button{
     border: none;
-    background: #b79e41;
+    /*background: #b79e41;*/
+    background: #3276b1;
     color: #ffffff;
     text-transform: uppercase;
     width: 100%;
 }
 .templatemo_contacttitle	{
     font-size: 16px;
-    color: #ffffff; }
+    }
 .templatemo_contactmap	{
     width: 332px;
     height: 388px;
@@ -483,7 +487,8 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
 .templatemo_address	ul li.left{
     float: left;
     width: 40px;
-    color: #b69e40;
+    /*color: #b69e40;*/
+    color: #3276b1;
     font-size: 22px;
 }
 .templatemo_address	ul li.rigth{
@@ -498,18 +503,18 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
     height: 34px;
     padding: 6px 12px;
     border-radius: 0px;
-    background: #343536;
+    /*background: #343536;*/
     border: 1px solid #4b5257;
     width: 100%;
     margin-top: 10px;
-    color: #cccccc;
-}
+    /*color: #cccccc;*/
+}/**/
 .templatemo_form textarea{
     float: left;
     padding: 6px 12px;
     height: 130px;
     border-radius: 0px;
-    background: #343536;
+    /*background: #343536;*/
     border: 1px solid #4b5257;
     margin-top: 10px;
     color: #cccccc;
@@ -521,7 +526,7 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
     text-align: center;
     color: #ffffff;
     border-radius: 0px;
-    background: #b69e40;
+    /*background: #b69e40;*/
     border: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -535,7 +540,7 @@ a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no
     height: 388px;
 }
 
-.templatemo_footer { background: #343536; padding: 20px 0px; width: 100%; margin-top: 100px; }
+.templatemo_footer {padding: 20px 0px; width: 100%; margin-top: 100px; }
 .templatemo_footer .hex_footer	{ float: left; margin-right: 5px; height: 40px; }
 
 /* Smartphones (portrait and landscape) ----------- */
