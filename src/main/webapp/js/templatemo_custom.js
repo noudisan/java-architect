@@ -194,3 +194,7 @@ function getDivCss(index){
     }
     return cssClass;
 }
+
+function sendMessage(){
+    $("#contact_form").submit();
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztt.dao.ContactMapper">
+
+    <resultMap id="contactModel" type="com.ztt.dto.ContactDto">
+        <id column="ID" property="id"/>
+        <id column="FULL_NAME" property="fullName"/>
+        <id column="EMAIL" property="email"/>
+        <id column="PHONE" property="phone"/>
+        <id column="SUBJECT" property="subject"/>
+        <id column="MESSAGE" property="message"/>
+        <id column="CREATE_DATE" property="createDate"/>
+
+    </resultMap>
+
+    <insert id="save" parameterType="com.ztt.dto.ContactDto" keyProperty="id">
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        <![CDATA[
+          INSERT INTO TB_CONTACT (ID,FULL_NAME,EMAIL,PHONE,SUBJECT,MESSAGE,CREATE_DATE)
+          VALUES (#{id},#{fullName},#{email},#{phone},#{subject},#{message},#{createDate})
+        ]]>
+    </insert>
+
+
+
+</mapper>
+
