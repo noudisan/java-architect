@@ -14,8 +14,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:applicationContext-dao.xml,
-            classpath:applicationContext-task.xml,
+            classpath:applicationContext-dao.xml
         </param-value>
     </context-param>
     <listener>

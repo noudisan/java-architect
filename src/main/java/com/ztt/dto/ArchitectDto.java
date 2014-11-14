@@ -2,6 +2,7 @@ package com.ztt.dto;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 
 public class ArchitectDto implements Serializable, Cloneable {
@@ -15,6 +16,7 @@ public class ArchitectDto implements Serializable, Cloneable {
     private Date createDate;
     private String status;//是否有效 默认为1
 
+    private List<ArchitectDetailDto> architectDetailDtoList;
 
     public Long getId() {
         return id;
@@ -70,5 +72,13 @@ public class ArchitectDto implements Serializable, Cloneable {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public List<ArchitectDetailDto> getArchitectDetailDtoList() {
+        return architectDetailDtoList;
+    }
+
+    public void setArchitectDetailDtoList(List<ArchitectDetailDto> architectDetailDtoList) {
+        this.architectDetailDtoList = architectDetailDtoList;
     }
 }

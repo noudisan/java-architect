@@ -9,13 +9,14 @@
 
     <!-- Bootstrap -->
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" type="text/css"  rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/css/font-awesome.min.css" type="text/css"  rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/css/templatemo_misc.css" type="text/css"  rel="stylesheet"/>
+    <%--<link href="${pageContext.request.contextPath}/css/font-awesome.min.css" type="text/css"  rel="stylesheet"/>--%>
+    <%--<link href="${pageContext.request.contextPath}/css/templatemo_misc.css" type="text/css"  rel="stylesheet"/>--%>
     <link href="${pageContext.request.contextPath}/css/templatemo_style.css" type="text/css"  rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/css/lightbox.css" type="text/css"  rel="stylesheet"/>
 
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.lightbox.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/templatemo_custom.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/lightbox.js"></script>
 
 </head>
 <body>
@@ -55,7 +56,7 @@
 
 <div id="menu-container">
     <!-- gallery start -->
-    <div class="content homepage" id="menu-1">
+    <div class="content homepage" id="menu-1" style="text-align: center">
 
         <div class="container"  id="loadMoreDiv" >
             <div class="row">
@@ -87,7 +88,7 @@
             <div class="col-md-9 col-sm-12">Copyright &copy; 2014 - 2014 |
                 <a  href="#">益铭设计</a> |
             </div>
-            <div class="col-md-3 col-sm-12 templatemo_rfooter">
+            <div class="col-md-3 col-sm-12 templatemo_rfooter" style="display: none">
                 <a href="#">
                     <div class="hex_footer"></div>
                 </a>

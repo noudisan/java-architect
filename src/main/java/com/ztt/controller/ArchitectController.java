@@ -28,7 +28,7 @@ public class ArchitectController {
                                     @RequestParam(value = "page", required = false) Integer page) {
 
         architectSearchDto.setPageSize(pageSize);
-        architectSearchDto.setCurrentPage(0);
+        architectSearchDto.setCurrentPage(1);
         if (page != null) {
             architectSearchDto.setCurrentPage(page);
         }

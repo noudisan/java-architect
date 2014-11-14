@@ -1,5 +1,3 @@
-"use strict";
-
 jQuery(document).ready(function($){
     loadImages();
 
@@ -15,9 +13,6 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
-//	$( window ).load(function() {
-//	  $("#menu-container .products").hide();
-//	});
 
 	$(".main_menu a.templatemo_home").addClass('active');
 
@@ -74,9 +69,9 @@ jQuery(document).ready(function($){
 	});
 
 	/************** Gallery Hover Effect *********************/
-	$(".overlay").hide();
+	/*$(".overlay").hide();*/
 
-	$('.gallery-item').hover(
+	/*$('.gallery-item').hover(
 	  function() {
 	    $(this).find('.overlay').addClass('animated fadeIn').show();
 	  },
@@ -84,7 +79,7 @@ jQuery(document).ready(function($){
 	    $(this).find('.overlay').removeClass('animated fadeIn').hide();
 	  }
 	);
-
+*/
 	/************** LightBox *********************/
 	/*$(function(){
         $('[data-rel="lightbox"]').lightbox();
@@ -101,69 +96,42 @@ jQuery(document).ready(function($){
 
 });
 
-function loadScript() {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-      'callback=initialize';
-  document.body.appendChild(script);
-}
 
-function initialize() {
-    var mapOptions = {
-      zoom: 12,
-      center: new google.maps.LatLng(39.915,116.404)
-    };
-    var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
-}
-var indexPage=0;
+
+var indexPage=1;
 function loadImages(){
+    var ctx_url =$("#imageHead").val();
     $.ajax({
-        url: "/architect/index?page="+indexPage,
+        url: ctx_url+"/architect/index?page="+indexPage,
         type: "GET",
         async:false,
         dataType:"json",
         success: function (data, textStatus, jqXHR) {
             if (data && data.length !=0 ) {
-
-                var html ='';
-                if(indexPage == 0){
-                    html +='<div  class="container" ><div class="row templatemorow">';
-                }else{
-                    html +='<div class="container answer_list templatemo_gallerytop"><div class="row templatemorow">';
-                }
-                indexPage ++;
-                for(var index in data){
-                    var architectDto=data[index];
-                    var imagePath =$("#imageHead").val()+ architectDto.imagePath;
-                    var cssClass ="";
-                    if(parseInt(index)<9){
-                        cssClass=getDivCss(parseInt(index))
-                    }else{
-                        cssClass=getDivCss(parseInt(index)%9)
-                    }
-                    html +='<div class="'+cssClass+'">\
-                        <div>\
-                        <div class="hexagon hexagon2 gallery-item">\
-                            <div class="hexagon-in1">\
-                                <div class="hexagon-in2" style="background-image: url('+imagePath+');">\
-                                    <div class="overlay">\
-                                        <a href="'+imagePath+'" data-rel="lightbox" class="fa fa-expand"></a>\
-                                    </div>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        </div>\
-                    </div>';
-
-                }
-                html +='</div></div>';
+               var html = "<div style='margin-bottom: 10px;margin-left: 10px;'>";
+               for(var index in data){
+                   var architectDto = data[index];
+                   if(parseInt(index) == 5){
+                       html += "</div><div style='margin-bottom: 10px;margin-left: 10px;'>";
+                   }
+                   var architectDetailArray = architectDto.architectDetailDtoList;
+                   for(var detailIndex in architectDetailArray){
+                       var architectDetail = architectDetailArray[detailIndex];
+                       if(parseInt(detailIndex) == 0){
+                           html +=' <a href="'+ctx_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d."><img src="'+ctx_url+architectDto.imagePath+'" alt=""/></a>';
+                       }else{
+                           html +=' <a href="'+ctx_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d.">';
+                       }
+                   }
+               }
+                html +="</div>"
                 $("#loadMoreDiv").before(html);
+                indexPage ++;
             }else{
                 $(".gallery_more").text('浏览完毕');
             }
 
-            $('[data-rel="lightbox"]').lightbox();
+            //$('[data-rel="lightbox"]').lightbox();
         },
         error: function (jqXHR, textStatus, errorThrown) {
             alert(jqXHR);
@@ -171,29 +139,6 @@ function loadImages(){
     });
 }
 
-function getDivCss(index){
-    var cssClass="";
-    if(index == 0){
-        cssClass="hex col-sm-6";
-    }else if(index == 1 ){
-        cssClass="hex col-sm-6";
-    }else if(index == 2 ){
-        cssClass="hex col-sm-6  templatemo-hex-top2";
-    }else if(index == 3 ){
-        cssClass="hex col-sm-6  templatemo-hex-top3";
-    }else if(index == 4){
-        cssClass="hex col-sm-6  templatemo-hex-top3";
-    }else if(index == 5){
-        cssClass="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2";
-    }else if(index == 6){
-        cssClass="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3";
-    }else if(index == 7){
-        cssClass="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3";
-    }else if(index == 8){
-        cssClass="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2";
-    }
-    return cssClass;
-}
 
 function sendMessage(){
     $("#contact_form").submit();

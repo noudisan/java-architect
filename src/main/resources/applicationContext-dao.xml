@@ -7,9 +7,8 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-   <!-- <context:component-scan base-package="com.ztt" />-->
     <!-- 导入属性配置文件 -->
-    <context:property-placeholder  order="1"  location="classpath:jdbc.properties" ignore-unresolvable="true" />
+    <context:property-placeholder  order="2"  location="classpath:jdbc.properties" ignore-unresolvable="true" />
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
@@ -56,6 +55,10 @@
     </bean>
     <bean id="contactMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.ztt.dao.ContactMapper" />
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    <bean id="architectDetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.ztt.dao.ArchitectDetailMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
 </beans>
