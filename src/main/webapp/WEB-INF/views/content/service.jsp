@@ -9,7 +9,7 @@
                 <div class="col-md-3 col-sm-4">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/service1.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/service/service1.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="hexagon hexagonteam gallery-item">
                             <div class="hexagon-in1">
-                                <div class="hexagon-in2" style="background-image: url(/images/service/service2.jpg);"></div>
+                                <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/service/service2.jpg);"></div>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                 <div class="col-md-3 col-sm-4">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/service/service3.jpg);"> </div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/service/service3.jpg);"> </div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="hexagon hexagonteam gallery-item">
                             <div class="hexagon-in1">
-                                <div class="hexagon-in2" style="background-image: url(/images/service/service4.jpg);"></div>
+                                <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/service/service4.jpg);"></div>
                             </div>
                         </div>
                     </div>
