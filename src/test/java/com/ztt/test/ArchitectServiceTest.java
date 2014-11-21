@@ -7,18 +7,14 @@ import com.ztt.dto.ArchitectDetailDto;
 import com.ztt.dto.ArchitectDto;
 import com.ztt.dto.ArchitectSearchDto;
 import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.File;
 import java.util.Date;
 import java.util.List;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:test-applicationContext-dao.xml")
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = "classpath:test-applicationContext-dao.xml")
 public class ArchitectServiceTest {
 
     @Autowired
@@ -26,7 +22,7 @@ public class ArchitectServiceTest {
     @Autowired
     private ArchitectDetailMapper architectDetailMapper;
 
-    @Test
+    //@Test
     public void test_save() {
         File file = new File("C:\\Users\\zhoutaotao\\Downloads\\作品整理");
 
@@ -65,7 +61,7 @@ public class ArchitectServiceTest {
         }
     }
 
-    @Test
+    //@Test
     public void test_get() {
         ArchitectSearchDto searchDto = new ArchitectSearchDto();
         Integer count = architectMapper.count(searchDto);
@@ -73,7 +69,7 @@ public class ArchitectServiceTest {
         Assert.assertNotNull(count);
     }
 
-    @Test
+   // @Test
     public void test_page() {
         ArchitectSearchDto searchDto = new ArchitectSearchDto();
         searchDto.setCurrentPage(0);

@@ -7,13 +7,12 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/build?characterEncoding=UTF-8"/>
-        <property name="user" value="root"/>
-        <property name="password" value="123456"/>
+        <property name="jdbcUrl" value="${db.jdbcurl}"/>
+        <property name="user" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
         <property name="maxPoolSize" value="50"/>
         <property name="minPoolSize" value="5"/>
         <property name="initialPoolSize" value="5"/>
@@ -49,6 +48,10 @@
     </bean>
     <bean id="architectMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.ztt.dao.ArchitectMapper" />
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    <bean id="contactMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.ztt.dao.ContactMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     <bean id="architectDetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">

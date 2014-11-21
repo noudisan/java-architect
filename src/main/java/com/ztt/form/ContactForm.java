@@ -1,4 +1,4 @@
-package com.ztt;
+package com.ztt.form;
 
 /**
  * Created by noudisan on 2014/11/4.

@@ -1,7 +1,7 @@
 package com.ztt.controller;
 
 import com.mysql.jdbc.StringUtils;
-import com.ztt.ContactForm;
+import com.ztt.form.ContactForm;
 import com.ztt.dto.ContactDto;
 import com.ztt.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
