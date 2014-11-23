@@ -26,7 +26,7 @@ body.blurred > * {
 }
 
 .lightbox-loading {
-  background: url(../images/loading.gif) center center no-repeat;
+  background: url(../images/lightbox/loading.gif) center center no-repeat;
   width: 31px;
   height: 31px;
   margin: -16px 0 0 -16px;
@@ -84,19 +84,19 @@ body.blurred > * {
 .lightbox-close {
   right: 30px;
   top: 30px;
-  background-image: url("../images/close.png");
+  background-image: url("../images/lightbox/close.png");
 }
 
 .lightbox-next {
   right: 30px;
   top: 48%;
-  background-image: url("../images/next.png");
+  background-image: url("../images/lightbox/next.png");
 }
 
 .lightbox-previous {
   left: 30px;
   top: 48%;
-  background-image: url("../images/previous.png");
+  background-image: url("../images/lightbox/prev.png");
 }
 
 /***********************************************************************
@@ -126,7 +126,7 @@ body.blurred > * {
 * markup.
 *******************************************************/
 .ls-preloader {
-  background: url(../images/loading.gif) #f2f2f2 no-repeat center 75px;
+  background: url(../images/lightbox/loading.gif) #f2f2f2 no-repeat center 75px;
   opacity: 1;
   /* Do not edit below this line */
   width: 100%;
