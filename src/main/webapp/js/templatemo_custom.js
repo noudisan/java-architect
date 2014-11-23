@@ -101,9 +101,8 @@ jQuery(document).ready(function($){
 var indexPage=1;
 function loadImages(){
     var image_url =$("#image_url").val();
-    var ctx_url =$("#ctx_url").val();
     $.ajax({
-        url: ctx_url+"/architect/index?page="+indexPage,
+        url: getCtx_url()+"/architect/index?page="+indexPage,
         type: "GET",
         async:false,
         dataType:"json",
@@ -140,11 +139,9 @@ function loadImages(){
     });
 }
 
-
 function sendMessage(){
-    var ctx_url =$("#ctx_url").val();
     $.ajax({
-        url: ctx_url+"/contact/save",
+        url: getCtx_url()+"/contact/save",
         type: "POST",
         async:false,
         data:{
@@ -168,4 +165,12 @@ function sendMessage(){
         error: function (jqXHR, textStatus, errorThrown) {
         }
     });
+}
+
+function getCtx_url(){
+    var ctx_url =$("#ctx_url").val();
+    if(ctx_url.indexOf("architect")<0){
+        ctx_url = ctx_url+"/architect"
+    }
+    return ctx_url;
 }

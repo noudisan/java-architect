@@ -27,8 +27,8 @@ public class MainController {
     @Autowired
     private ArchitectDetailMapper architectDetailMapper;
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
-    public String index(  Model model) {
+    @RequestMapping(value = {"","index"}, method = RequestMethod.GET)
+    public String index(Model model) {
         model.addAttribute("imageHead", GlobalConfiguration.IMAGE_ARCHITECT_URL);
         return "index";
     }

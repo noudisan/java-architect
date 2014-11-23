@@ -19,19 +19,10 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-@RequestMapping("/index")
+@RequestMapping("/aop")
 public class AopController {
     @Autowired
     public AopService aopService;
-
-    @RequestMapping(value = "", method = RequestMethod.GET)
-    public String index(  Model model) {
-        model.addAttribute("imageHead","http://localhost:88");
-
-        return "index";
-    }
-
-
 
     @RequestMapping(value = "/post", method = RequestMethod.POST, consumes = "application/json", produces = "application/json;charset=UTF-8")
     @ResponseBody
