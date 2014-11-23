@@ -118,9 +118,9 @@ function loadImages(){
                    for(var detailIndex in architectDetailArray){
                        var architectDetail = architectDetailArray[detailIndex];
                        if(parseInt(detailIndex) == 0){
-                           html +=' <a href="'+image_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d."><img src="'+image_url+architectDto.imagePath+'" alt=""/></a>';
+                           html +=' <a href="'+image_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="'+index+'"><img src="'+image_url+architectDto.imagePath+'" alt=""/></a>';
                        }else{
-                           html +=' <a href="'+image_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d.">';
+                           html +=' <a href="'+image_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="'+index+'">';
                        }
                    }
                }
