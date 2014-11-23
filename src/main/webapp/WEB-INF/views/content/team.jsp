@@ -9,7 +9,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/huhaiming.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/huhaiming.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/zhoushuo.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/zhoushuo.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/zhoushanshan.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/zhoushanshan.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/guolei.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/guolei.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/zhangjiahui.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/zhangjiahui.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/yulili.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/yulili.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                 <div style="width:25%">
                     <div class="hexagon hexagonteam gallery-item">
                         <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(/images/team/shantianhong.jpg);"></div>
+                            <div class="hexagon-in2" style="background-image: url(${pageContext.request.contextPath}/images/team/shantianhong.jpg);"></div>
                         </div>
                     </div>
                 </div>

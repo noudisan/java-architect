@@ -20,7 +20,8 @@
 
 </head>
 <body>
-<input type="hidden" id="imageHead" value="${imageHead}">
+<input type="hidden" id="image_url" value="${imageHead}">
+<input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 <div class="site-header">
     <div class="main-navigation">
         <div class="responsive_menu">

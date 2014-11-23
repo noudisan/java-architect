@@ -10,7 +10,7 @@
         <id column="TYPE" property="type"/>
         <id column="CREATE_DATE" property="createDate"/>
         <id column="STATUS" property="status"/>
-
+        <id column="SORT" property="sort"/>
     </resultMap>
 
     <insert id="save" parameterType="com.ztt.dto.ArchitectDto" keyProperty="id">
@@ -18,8 +18,8 @@
             SELECT LAST_INSERT_ID();
         </selectKey>
         <![CDATA[
-          INSERT INTO TB_ARCHITECT (ID,NAME,IMAGE_PATH,REMARKS,TYPE,CREATE_DATE,STATUS)
-          VALUES (#{id},#{name},#{imagePath},#{remarks},#{type},#{createDate},#{status})
+          INSERT INTO TB_ARCHITECT (ID,NAME,IMAGE_PATH,REMARKS,TYPE,CREATE_DATE,STATUS,SORT)
+          VALUES (#{id},#{name},#{imagePath},#{remarks},#{type},#{createDate},#{status},#{sort})
         ]]>
     </insert>
 
@@ -33,7 +33,7 @@
                 <![CDATA[ AND NAME = #{name}]]>
             </if>
         </trim>
-        <![CDATA[ ORDER BY CREATE_DATE DESC ]]>
+        <![CDATA[ ORDER BY SORT ]]>
     </select>
 
     <select id="count" parameterType="com.ztt.dto.ArchitectSearchDto" resultType="int">

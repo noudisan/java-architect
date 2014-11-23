@@ -7,7 +7,11 @@ import com.ztt.dto.ArchitectDetailDto;
 import com.ztt.dto.ArchitectDto;
 import com.ztt.dto.ArchitectSearchDto;
 import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.File;
 import java.util.Date;
@@ -24,7 +28,7 @@ public class ArchitectServiceTest {
 
     //@Test
     public void test_save() {
-        File file = new File("C:\\Users\\zhoutaotao\\Downloads\\作品整理");
+        File file = new File("C:\\working\\nginx-1.0.11\\html\\product\\detail");
 
         File[] productArray = file.listFiles();
 
@@ -36,10 +40,12 @@ public class ArchitectServiceTest {
             architectDto.setCreateDate(new Date());
             for (File sub : subFile) {
                 if (sub.getName().contains(".png")) {
-                    architectDto.setImagePath("/images/product/" + sub.getName());
+                    architectDto.setImagePath("/product/" + sub.getName());
+                    architectDto.setSort(Integer.valueOf(product.getName().substring(0,2)));
                 }
             }
             architectDto.setType("IMAGE");
+
             architectMapper.save(architectDto);
 
 
@@ -48,10 +54,10 @@ public class ArchitectServiceTest {
                 if (sub.getName().contains(".jpg")) {
                     ArchitectDetailDto architectDetailDto = new ArchitectDetailDto();
                     architectDetailDto.setName(sub.getName());
-                    architectDetailDto.setImagePath("/images/product/detail/" + sub.getParentFile().getName() + "/" + sub.getName());
+                    architectDetailDto.setImagePath("/product/detail/" + sub.getParentFile().getName() + "/" + sub.getName());
                     architectDetailDto.setCreateDate(new Date());
                     architectDetailDto.setArchitectId(architectDto.getId());
-                    architectDetailDto.setSort(i);
+                    architectDetailDto.setSort(Integer.valueOf(sub.getName().substring(0, sub.getName().indexOf("."))));
 
                     architectDetailMapper.save(architectDetailDto);
                 }

@@ -15,6 +15,7 @@ public class ArchitectDto implements Serializable, Cloneable {
     private String type;
     private Date createDate;
     private String status;//是否有效 默认为1
+    private Integer sort;
 
     private List<ArchitectDetailDto> architectDetailDtoList;
 
@@ -80,5 +81,13 @@ public class ArchitectDto implements Serializable, Cloneable {
 
     public void setArchitectDetailDtoList(List<ArchitectDetailDto> architectDetailDtoList) {
         this.architectDetailDtoList = architectDetailDtoList;
+    }
+
+    public Integer getSort() {
+        return sort;
+    }
+
+    public void setSort(Integer sort) {
+        this.sort = sort;
     }
 }

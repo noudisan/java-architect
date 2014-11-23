@@ -100,7 +100,8 @@ jQuery(document).ready(function($){
 
 var indexPage=1;
 function loadImages(){
-    var ctx_url =$("#imageHead").val();
+    var image_url =$("#image_url").val();
+    var ctx_url =$("#ctx_url").val();
     $.ajax({
         url: ctx_url+"/architect/index?page="+indexPage,
         type: "GET",
@@ -118,9 +119,9 @@ function loadImages(){
                    for(var detailIndex in architectDetailArray){
                        var architectDetail = architectDetailArray[detailIndex];
                        if(parseInt(detailIndex) == 0){
-                           html +=' <a href="'+ctx_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d."><img src="'+ctx_url+architectDto.imagePath+'" alt=""/></a>';
+                           html +=' <a href="'+image_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d."><img src="'+image_url+architectDto.imagePath+'" alt=""/></a>';
                        }else{
-                           html +=' <a href="'+ctx_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d.">';
+                           html +=' <a href="'+image_url+architectDetail.imagePath+'" data-lightbox="'+architectDto.name+'" data-title="d.">';
                        }
                    }
                }
@@ -134,12 +135,37 @@ function loadImages(){
             //$('[data-rel="lightbox"]').lightbox();
         },
         error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR);
+
         }
     });
 }
 
 
 function sendMessage(){
-    $("#contact_form").submit();
+    var ctx_url =$("#ctx_url").val();
+    $.ajax({
+        url: ctx_url+"/contact/save",
+        type: "POST",
+        async:false,
+        data:{
+            fullName:$("#contact_fullName").val(),
+            phoneOrEmail:$("#contact_email").val(),
+            subject:$("#contact_subject").val(),
+            message:$("#contact_message").val()
+        },
+        dataType:"json",
+        success: function (data, textStatus, jqXHR) {
+            if (data =='SUCCESS' ) {
+              alert("信息发送成功，我们会尽快联系您！");
+                $("#contact_fullName").prop("value","");
+                $("#contact_email").prop("value","");
+                $("#contact_subject").prop("value","");
+                $("#contact_message").prop("value","");
+            }else{
+                alert("信息发送失败，请使用联系电话！");
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+        }
+    });
 }

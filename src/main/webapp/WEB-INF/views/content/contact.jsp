@@ -8,7 +8,7 @@
             <div class="col-md-4 col-sm-12">
                 <div class="templatemo_contactmap">
                     <<div id="templatemo_map"></div>
-                    <img src="images/templatemo_contactiframe.png" alt="contact map">
+                    <img src="images/map/map.png" alt="contact map">
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 leftalign">
@@ -52,16 +52,16 @@
             <div class="col-md-4 col-sm-12">
                 <form id="contact_form" role="form" action="/contact/save" target="_blank" method="post">
                     <div class="templatemo_form">
-                        <input name="fullName" type="text" class="form-control" id="fullname" placeholder="姓名" maxlength="40">
+                        <input name="fullName" type="text" class="form-control" id="contact_fullName" placeholder="姓名" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <input name="phoneOrEmail" type="text" class="form-control" id="email" placeholder="手机号或邮箱" maxlength="40">
+                        <input name="phoneOrEmail" type="text" class="form-control" id="contact_email" placeholder="手机号或邮箱" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <input name="subject" type="text" class="form-control" id="subject" placeholder="主题" maxlength="40">
+                        <input name="subject" type="text" class="form-control" id="contact_subject" placeholder="主题" maxlength="40">
                     </div>
                     <div class="templatemo_form">
-                        <textarea name="message" rows="10" class="form-control" id="message" placeholder="内容"></textarea>
+                        <textarea name="message" rows="10" class="form-control" id="contact_message" placeholder="内容"></textarea>
                     </div>
                     <div class="templatemo_form"><button type="button" class="btn btn-primary" onclick="sendMessage()">发送信息</button></div>
                 </form>
