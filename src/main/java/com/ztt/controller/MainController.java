@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.io.File;
 import java.util.Date;
 
-/**
- * Created by noudisan on 2014/11/2.
- */
 @Controller
 public class MainController {
     @Autowired
@@ -39,24 +36,27 @@ public class MainController {
         if(!s.equals("AEDIWLKESDKF")){
             return  "faild";
         }
-        File file = new File("/usr/share/nginx/html/product/detail");
-
+        String pathname = "/Users/zhoutaotao/www/";
+        File file =new File(pathname+"architect/product");
         File[] productArray = file.listFiles();
 
         for (File product : productArray) {
-            ArchitectDto architectDto = new ArchitectDto();
-
+            if(product.getName().contains(".")){
+                continue;
+            }
             File[] subFile = product.listFiles();
+
+            //保存detial图片
+            ArchitectDto architectDto = new ArchitectDto();
             architectDto.setName(product.getName());
             architectDto.setCreateDate(new Date());
             for (File sub : subFile) {
                 if (sub.getName().contains(".png")) {
-                    architectDto.setImagePath("/product/" + sub.getName());
+                    architectDto.setImagePath("architect/product/" + sub.getParentFile().getName() + "/"+ sub.getName());
                     architectDto.setSort(Integer.valueOf(product.getName().substring(0,2)));
                 }
             }
             architectDto.setType("IMAGE");
-
             architectMapper.save(architectDto);
 
 
@@ -65,7 +65,7 @@ public class MainController {
                 if (sub.getName().contains(".jpg")) {
                     ArchitectDetailDto architectDetailDto = new ArchitectDetailDto();
                     architectDetailDto.setName(sub.getName());
-                    architectDetailDto.setImagePath("/product/detail/" + sub.getParentFile().getName() + "/" + sub.getName());
+                    architectDetailDto.setImagePath("architect/product/" + sub.getParentFile().getName() + "/" + sub.getName());
                     architectDetailDto.setCreateDate(new Date());
                     architectDetailDto.setArchitectId(architectDto.getId());
                     architectDetailDto.setSort(Integer.valueOf(sub.getName().substring(0, sub.getName().indexOf("."))));
