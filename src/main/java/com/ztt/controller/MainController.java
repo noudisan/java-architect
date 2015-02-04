@@ -36,7 +36,7 @@ public class MainController {
         if(!s.equals("AEDIWLKESDKF")){
             return  "faild";
         }
-        String pathname = "/Users/zhoutaotao/www/";
+        String pathname = "/opt/www/";
         File file =new File(pathname+"architect/product");
         File[] productArray = file.listFiles();
 

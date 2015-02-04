@@ -169,8 +169,5 @@ function sendMessage(){
 
 function getCtx_url(){
     var ctx_url =$("#ctx_url").val();
-    if(ctx_url.indexOf("architect")<0){
-        ctx_url = ctx_url+"/architect"
-    }
     return ctx_url;
 }
