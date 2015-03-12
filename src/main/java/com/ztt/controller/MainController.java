@@ -30,6 +30,27 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping(value = {"home"}, method = RequestMethod.GET)
+    public String home(Model model) {
+        return "home";
+    }
+
+    @RequestMapping(value = {"project"}, method = RequestMethod.GET)
+    public String project(Model model) {
+        model.addAttribute("imageHead", GlobalConfiguration.IMAGE_ARCHITECT_URL);
+
+        return "ftpm/project";
+    }
+    @RequestMapping(value = {"idea"}, method = RequestMethod.GET)
+    public String idea(Model model) {
+        return "ftpm/idea";
+    }
+
+    @RequestMapping(value = {"contact"}, method = RequestMethod.GET)
+    public String contact(Model model) {
+        return "ftpm/contact";
+    }
+
     @RequestMapping(value = "/init", method = RequestMethod.GET)
     @ResponseBody
     public String insert(@RequestParam("validate")String s){
@@ -58,8 +79,6 @@ public class MainController {
             }
             architectDto.setType("IMAGE");
             architectMapper.save(architectDto);
-
-
             for (int i = 0; i < subFile.length; i++) {
                 File sub = subFile[i];
                 if (sub.getName().contains(".jpg")) {
@@ -73,10 +92,7 @@ public class MainController {
                     architectDetailMapper.save(architectDetailDto);
                 }
             }
-
-
         }
-
         return "success";
     }
 }

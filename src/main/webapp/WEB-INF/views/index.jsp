@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-sm-12">
-                <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备15009279号</a> |
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a> |
                 Copyright &copy; 2014 - 2015 |
                 <a  href="#">北京禾意建筑设计咨询有限公司</a> |
             </div>

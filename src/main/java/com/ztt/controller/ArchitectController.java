@@ -36,4 +36,15 @@ public class ArchitectController {
         return architectDtoList;
     }
 
+    @RequestMapping(value = "withoutPage", method = RequestMethod.GET)
+    @ResponseBody
+    public List<ArchitectDto> withoutPage(ArchitectSearchDto architectSearchDto) {
+
+        architectSearchDto.setPageSize(999);
+        architectSearchDto.setCurrentPage(1);
+
+        List<ArchitectDto> architectDtoList = architectService.search(architectSearchDto);
+        return architectDtoList;
+    }
+
 }
