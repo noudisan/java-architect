@@ -11,6 +11,7 @@
         <id column="CREATE_DATE" property="createDate"/>
         <id column="STATUS" property="status"/>
         <id column="SORT" property="sort"/>
+        <id column="title" property="title"/>
     </resultMap>
 
     <insert id="save" parameterType="com.ztt.dto.ArchitectDto" keyProperty="id">
@@ -18,13 +19,13 @@
             SELECT LAST_INSERT_ID();
         </selectKey>
         <![CDATA[
-          INSERT INTO TB_ARCHITECT (ID,NAME,IMAGE_PATH,REMARKS,TYPE,CREATE_DATE,STATUS,SORT)
-          VALUES (#{id},#{name},#{imagePath},#{remarks},#{type},#{createDate},#{status},#{sort})
+          INSERT INTO TB_ARCHITECT (ID,NAME,IMAGE_PATH,REMARKS,TYPE,CREATE_DATE,STATUS,SORT,TITLE)
+          VALUES (#{id},#{name},#{imagePath},#{remarks},#{type},#{createDate},#{status},#{sort},#{title})
         ]]>
     </insert>
 
     <select id="query" parameterType="com.ztt.dto.ArchitectSearchDto" resultMap="architectModel">
-        select * from TB_ARCHITECT
+        <![CDATA[ select * from TB_ARCHITECT ]]>
         <trim prefix="where" prefixOverrides="AND |OR ">
             <if test="id != null ">
                 <![CDATA[ID = #{id}]]>
@@ -37,7 +38,7 @@
     </select>
 
     <select id="count" parameterType="com.ztt.dto.ArchitectSearchDto" resultType="int">
-        select count(*) from TB_ARCHITECT
+        <![CDATA[ select count(*) from TB_ARCHITECT ]]>
         <trim prefix="where" prefixOverrides="AND |OR ">
             <if test="id != null ">
                 <![CDATA[ID = #{id}]]>
@@ -53,6 +54,42 @@
             delete from TB_ARCHITECT  where ID = #{id}
         ]]>
     </delete>
+
+    <select id="queryByName" parameterType="string" resultMap="architectModel">
+        <![CDATA[ select * from TB_ARCHITECT where NAME = #{name}]]>
+    </select>
+
+    <update id="update"  parameterType="com.ztt.dto.ArchitectDto" >
+        <![CDATA[update TB_ARCHITECT ]]>
+        <trim prefix="SET" prefixOverrides=", ">
+            <if test="name != null and name !=''">
+                <![CDATA[, NAME = #{name}]]>
+            </if>
+            <if test="imagePath != null and imagePath !=''">
+                <![CDATA[, IMAGE_PATH = #{imagePath}]]>
+            </if>
+            <if test="remarks != null and remarks !=''">
+                <![CDATA[, REMARKS = #{remarks}]]>
+            </if>
+            <if test="type != null and type !=''">
+                <![CDATA[, TYPE = #{type}]]>
+            </if>
+            <if test="createDate != null ">
+                <![CDATA[, CREATE_DATE = #{createDate}]]>
+            </if>
+            <if test="status != null and status !='' ">
+                <![CDATA[, STATUS = #{status}]]>
+            </if>
+            <if test="sort != null and sort !='' ">
+                <![CDATA[, SORT = #{sort}]]>
+            </if>
+            <if test="title != null and title !='' ">
+                <![CDATA[, TITLE = #{title}]]>
+            </if>
+        </trim>
+        <![CDATA[WHERE ID = #{id} ]]>
+    </update>
+
 
 </mapper>
 

@@ -1,11 +1,12 @@
 package com.ztt.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by zhoutaotao on 2014-11-14.
  */
-public class ArchitectDetailDto {
+public class ArchitectDetailDto implements Serializable, Cloneable  {
     private static final long serialVersionUID = 1L;
 
     private Long id;

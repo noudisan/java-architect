@@ -22,6 +22,7 @@
 
 </head>
 <body>
+<input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 <div id="header">
   <div class="logotype">
     <a href="index.html">

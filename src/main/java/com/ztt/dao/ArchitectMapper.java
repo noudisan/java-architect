@@ -17,4 +17,8 @@ public interface ArchitectMapper {
     public Integer count(ArchitectSearchDto architectSearchDto);
 
     public void delete(Long architectDtoId);
+
+    ArchitectDto queryByName(String name);
+
+    void update(ArchitectDto dto);
 }

@@ -51,8 +51,8 @@ public class ImageController {
         imageList.add("运河之门“洞天福地”-淮安世界运河文化旅游区");
         imageList.add("铁路局站-乌鲁木齐地铁1号线");
         imageList.add("南门站-乌鲁木齐地铁1号线");
-        imageList.add("湖南韶山文化旅游基地");
-        imageList.add("湖南韶山文化旅游基地");
+        imageList.add("润泽东方文化城一期规划设计方案");
+        imageList.add("润泽东方文化城一期规划设计方案");
 
         imageList.add("北京社会职业管理学院");
         imageList.add("北京社会职业管理学院");

@@ -38,7 +38,6 @@ function homeSlider() {
 }
 
 function getCtx_url(){
-    //var ctx_url =$("#ctx_url").val();
-    //return ctx_url;
-    return "";
+    var ctx_url =$("#ctx_url").val();
+    return ctx_url;
 }

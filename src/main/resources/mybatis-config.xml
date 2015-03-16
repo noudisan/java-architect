@@ -12,8 +12,6 @@
         <plugin interceptor="com.ztt.mybatisinterceptor.PagingationAndSortInterceptor">
         </plugin>
     </plugins>
-    <mappers>
-         <mapper resource="com/ztt/dao/ExportFileMapper.xml" />
-    </mappers>
+
 
 </configuration>

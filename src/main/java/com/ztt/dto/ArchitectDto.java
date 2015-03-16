@@ -16,8 +16,11 @@ public class ArchitectDto implements Serializable, Cloneable {
     private Date createDate;
     private String status;//是否有效 默认为1
     private Integer sort;
+    private String title;
 
-    private List<ArchitectDetailDto> architectDetailDtoList;
+    private List<ArchitectDetailDto> architectDetailDtoList;//描述
+
+    private ArchitectInfoDto architectInfoDto;
 
     public Long getId() {
         return id;
@@ -89,5 +92,21 @@ public class ArchitectDto implements Serializable, Cloneable {
 
     public void setSort(Integer sort) {
         this.sort = sort;
+    }
+
+    public ArchitectInfoDto getArchitectInfoDto() {
+        return architectInfoDto;
+    }
+
+    public void setArchitectInfoDto(ArchitectInfoDto architectInfoDto) {
+        this.architectInfoDto = architectInfoDto;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

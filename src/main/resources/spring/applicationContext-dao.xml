@@ -58,4 +58,8 @@
         <property name="mapperInterface" value="com.ztt.dao.ArchitectDetailMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
+    <bean id="architectInfoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.ztt.dao.ArchitectInfoMapper" />
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
 </beans>

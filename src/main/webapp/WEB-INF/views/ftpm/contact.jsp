@@ -23,12 +23,11 @@
 
 </head>
 <body>
+<input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 <!-- Dead simple image preloading without javascript ;-) -->
 <div id="preload">
   <img src="${pageContext.request.contextPath}/images/ftpm/service_hover.png" alt="" />
 </div>
-
-
 
 <div id="header">
   <div class="logotype">
@@ -81,10 +80,10 @@
 
       <h2 class="title">找到我们</h2>
 
-      <div class="gmap">
+     <%-- <div class="gmap">
         <!-- Google Maps Element Code -->
         <img src="images/map/map.png" alt="contact map">
-      </div>
+      </div>--%>
 
       <div class="clear"></div>
     </div><!-- .blog-post -->
@@ -98,11 +97,13 @@
       <p></p>
 
       <p>
-        <b>地址</b>:北京市海淀区羊坊店东路北蜂窝103号院<br />
-        <b>电话</b>:(86 10)53312615<br />
-        <b>传真</b>:(86 10)53312615<br />
+        <b>地址</b>:北京市海淀区车公庄西路甲19号华通大厦A座626室<br />
+        <b>电话</b>:(86 10) 53312615<br />
+        <b>手机</b>:18611516653<br />
+        <b>传真</b>:(86 10) 53312615<br />
         <b>邮编</b>:100038<br />
         <b>邮箱</b>:heyi_studio@163.com<br />
+        <b>QQ</b>:2514163590<br />
       </p>
     </div>
 

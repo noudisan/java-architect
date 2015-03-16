@@ -29,8 +29,8 @@ function initProject(){
                     html +='<li class="'+dto.status+'">';
                     html +='<a class="item-'+(parseInt(index)+1)+'">';
                     html +='<img src="'+image_url+dto.imagePath+'" width="230" height="150" alt="" />';
-                    html +='<span class="title">Lorem ipsum dolor sit hamet</span>'
-                    html +='<span class="cat">print works / logotype</span> ';
+                    html +='<span class="title">'+dto.title+'</span>'
+                    html +='<span class="cat"></span> ';
                     html +='</a>';
                     html +='</li>';
 
@@ -45,11 +45,23 @@ function initProject(){
                     detailHtml += '<div class="portfolio-item-right">'
                     detailHtml += '<div class="portfolio-controls"><a class="left-arrow"></a><a class="right-arrow"></a><a class="button-close"></a><div class="clear"></div></div>';
                     detailHtml += '<h2>'+dto.title+'</h2>';
-                    detailHtml += '<span>dto.title</span>';
-                    detailHtml += '<p>text1</p>';
-                    detailHtml += '<p>text2</p>';
-                    detailHtml += '<p>text3</p>';
-                    detailHtml += '<a href="#" class="portfolio-link">Launch project</a>';
+                    detailHtml += '<span>'+dto.title+'</span>';
+                    if(dto.architectInfoDto && dto.architectInfoDto.desc1){
+                        detailHtml += '<p>'+dto.architectInfoDto.desc1+'</p>';
+                    }else{
+                        detailHtml += '<p></p>';
+                    }
+                    if(dto.architectInfoDto && dto.architectInfoDto.desc2){
+                        detailHtml += '<p>'+dto.architectInfoDto.desc2+'</p>';
+                    }else{
+                        detailHtml += '<p></p>';
+                    }
+                    if(dto.architectInfoDto && dto.architectInfoDto.desc3){
+                        detailHtml += '<p>'+dto.architectInfoDto.desc3+'</p>';
+                    }else{
+                        detailHtml += '<p></p>';
+                    }
+                    detailHtml += '<a href="#" class="portfolio-link"></a>';
                     detailHtml += '</div><div class="clear"></div></div>';
 
                 }
@@ -246,7 +258,6 @@ function goToPorfolio() {
 }
 
 function getCtx_url(){
-    //var ctx_url =$("#ctx_url").val();
-    //return ctx_url;
-    return "";
+    var ctx_url =$("#ctx_url").val();
+    return ctx_url;
 }

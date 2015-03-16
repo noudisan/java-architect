@@ -23,7 +23,7 @@
 </head>
 <body>
 <input type="hidden" id="image_url" value="${imageHead}">
-
+<input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 
 <div id="header">
   <div class="logotype">
