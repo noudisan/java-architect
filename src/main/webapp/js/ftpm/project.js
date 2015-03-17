@@ -4,10 +4,18 @@ function DocReady() {
     initProject();
 
     slider();
-    portfolioItems();
+    //portfolioItems();
     topFooterSlider();
 
     portfolioFilters();
+
+    var selectProject =$("#selectProject").val();
+    if(selectProject){
+        $("#filters").find("li.selected").removeClass("selected");
+        $("#filters li").find("a[data-filter='."+selectProject+"']").parent("li").addClass("selected")
+        $("#filters li").find("a[data-filter='."+selectProject+"']").trigger("click");
+    }
+
 }
 
 function initProject(){

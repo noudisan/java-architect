@@ -41,8 +41,10 @@ public class MainController {
     }
 
     @RequestMapping(value = {"project"}, method = RequestMethod.GET)
-    public String project(Model model) {
+    public String project(Model model,@RequestParam(value="projectType",required = false)String projectType) {
+
         model.addAttribute("imageHead", GlobalConfiguration.IMAGE_ARCHITECT_URL);
+        model.addAttribute("projectType",projectType);
         return "ftpm/project";
     }
     @RequestMapping(value = {"idea"}, method = RequestMethod.GET)

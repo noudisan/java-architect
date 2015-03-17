@@ -21,7 +21,6 @@ public class ContactController {
     private ContactService contactService;
 
     @RequestMapping(value = "save", method = RequestMethod.POST)
-    @ResponseBody
     public String save(ContactForm contactForm){
         try{
             ContactDto contactDto = new ContactDto();
@@ -37,9 +36,9 @@ public class ContactController {
             contactDto.setMessage(contactForm.getMessage());
             contactDto.setCreateDate(new Date());
             contactService.save(contactDto);
-            return "SUCCESS";
+            return "redirect:index";
         }catch (Exception e){
-            return "FAIL";
+            return "redirect:index";
         }
 
 

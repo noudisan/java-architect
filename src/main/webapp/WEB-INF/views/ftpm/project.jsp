@@ -25,6 +25,7 @@
 <input type="hidden" id="image_url" value="${imageHead}">
 <input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 
+<input type="hidden" id="selectProject" value="${projectType}">
 <div id="header">
   <div class="logotype">
     <a href="index.html">
@@ -32,8 +33,8 @@
     </a>
   </div>
   <ul>
-    <li class="selected"><a href="/home">首页</a> -</li>
-    <li><a href="/project">项目</a> -</li>
+    <li><a href="/home">首页</a> -</li>
+    <li class="selected" ><a href="/project">项目</a> -</li>
     <li><a href="/idea">服务理念</a> -</li>
     <li class="last"><a href="/contact">联系方式</a></li>
   </ul>
@@ -48,46 +49,14 @@
 
 <div id="slider-container">
   <div id="portfolio-items-slider">
-    <%--<div class="item-1 portfolio-item">
-      <div class="portfolio-slider-containter">
-        <div class="portfolio-slides">
-          <img src="${pageContext.request.contextPath}/images/ftpm/portfolio_slides/portfoliobig1.jpg" />
-          <img src="${pageContext.request.contextPath}/images/ftpm/portfolio_slides/portfoliobig2.jpg" />
-          <img src="${pageContext.request.contextPath}/images/ftpm/portfolio_slides/portfoliobig3.jpg" />
-          <img src="${pageContext.request.contextPath}/images/ftpm/portfolio_slides/portfoliobig4.jpg" />
-        </div>
-      </div>
 
-      <div class="portfolio-item-right">
-        <div class="portfolio-controls">
-          <a class="left-arrow"></a>
-          <a class="right-arrow"></a>
-          <a class="button-close"></a>
-          <div class="clear"></div>
-        </div>
-        <h2>Project Cove v1</h2>
-        <span>All works / Print works</span>
-        <p>
-        text1
-        </p>
-        <p>
-          text2
-        </p>
-        <p>
-       tex3
-        </p>
-        <a href="#" class="portfolio-link">Launch project</a>
-      </div>
-
-      <div class="clear"></div>
-    </div>--%>
   </div>
 
 </div>
 <!-- #slider end -->
 
 <div id="portfolio-inner" class="container">
-  <h1 class="title"><span>项目介绍</span></h1>
+  <h1 class="title"></h1>
   <ul id="filters">
     <li class="selected">
       <a data-filter="*">所有项目</a> /
@@ -111,13 +80,6 @@
   <div class="clear"></div>
 
   <ul id="portfolio-items" class="clearfix">
-   <%-- <li class="web-design">
-      <a class="item-1">
-        <img src="${pageContext.request.contextPath}/images/ftpm/portfolio_thumbs/work1.jpg" width="230" height="150" alt="" />
-        <span class="title">Lorem ipsum dolor sit hamet</span>
-        <span class="cat">print works / logotype</span>
-      </a>
-    </li>--%>
 
   </ul><!-- #portfolio-items end -->
 </div><!-- #portfolio-inner end -->
@@ -130,7 +92,7 @@
     <div id="footer-text">
       <div class="footer-copyright">
         <p class="top">
-          &copy; <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>  &copy; | Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
+          <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>| Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
         </p>
         <p class="bottom">
           北京禾意建筑设计咨询有限公司

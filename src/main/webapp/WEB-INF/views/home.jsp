@@ -64,27 +64,27 @@
 
 <ul id="services" class="container clearfix">
     <li>
-        <a href="#" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/01swbg.png)">
-            商务办公
+        <a href="${pageContext.request.contextPath}/project?projectType=sybg" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/01swbg.png)">
+            商业办公
         </a>
     </li>
     <li>
-        <a href="#" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/02jzgh.png)">
+        <a href="${pageContext.request.contextPath}/project?projectType=jzgh" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/02jzgh.png)">
             居住规划
         </a>
     </li>
     <li>
-        <a href="#" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/03jgsj.png)">
+        <a href="${pageContext.request.contextPath}/project?projectType=jgsj" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/03jgsj.png)">
             景观设计
         </a>
     </li>
     <li>
-        <a href="#" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/04whjy.png)">
+        <a href="${pageContext.request.contextPath}/project?projectType=whjy" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/04whjy.png)">
             文化教育
         </a>
     </li>
     <li>
-        <a href="#" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/05zydc.png)">
+        <a href="${pageContext.request.contextPath}/project?projectType=zydc" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/05zydc.png)">
             资源地产
         </a>
     </li>
@@ -93,19 +93,73 @@
 <div id="footer">
     <div id="footer-inner" class="clearfix container">
         <div class="clear"></div>
+        <div id="footer-heading">
+            <h1>关于我们</h1>
+            <h2>请联系我们获得更多信息</h2>
+        </div>
+
+        <div id="recent-works" style="height: 150px;">
+            <div style="float: left;width: 410px;color:white;margin-right: 100px;padding-left: 50px;" >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京禾意建筑设计咨询有限公司在北京成立，以建筑、规划、景观的研究和设计为内容的工作室。禾意与同类事务所相比，我们具备全面的设计能力，不仅有建筑专业，
+                同时具备结构、电气、给排水、暖通专业设计能力，能更好的服务于项目。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前、禾意以参与河北、河南、山东、四川、北京、江苏、等多个城市的建设中，为中国城市建设贡献微薄之力。
+            </div>
+            <div style="float: right;width:400px;color:white;">
+                <form class="form" action="/contact/save" method="post">
+                    <div >
+                        <label>姓名/公司 (<span>*</span>)</label>
+                        <input id="contact-name" name="fullName"  type="text" style="border:1px solid white;color: white;width: 149px;" />
+                    </div>
+                    <div >
+                        <label>邮箱/电话 (<span>*</span>)</label>
+                        <input id="contact-email" name="phoneOrEmail" type="text"  style="border:1px solid white;color: white;width: 149px;"/>
+                    </div>
+                    <div >
+                        <label>联系&nbsp;内容 (<span>*</span>)</label>
+                        <textarea id="contact-message" name="message" style="border:1px solid white;width: 149px;height: 60px;color: white"></textarea>
+                    </div>
+                    <div >
+                        <input class="submit" type="submit" value="发送" style="width:50px;height:24px;background:#5bc0de;" />
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+
+        <div id="our-clients" class="clearfix" style="padding-left: 50px;color:white">
+            <div>
+                地址：:北京市海淀区车公庄西路甲19号华通大厦A座626室
+            </div>
+            <div>
+                电话：(86 10) 53312615  18611516653
+            </div>
+            <div>
+                传真：(86 10) 53312615
+            </div>
+            <div>
+                邮编：100038
+            </div>
+            <div>
+                邮箱：heyi_studio@163.com
+            </div>
+            <div>
+                QQ：2514163590
+            </div>
+        </div><!-- #our-client end -->
 
         <div id="footer-text">
             <div class="footer-copyright">
                 <p class="top">
-                    &copy; <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>  &copy; | Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>| Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
                 </p>
                 <p class="bottom">
                     北京禾意建筑设计咨询有限公司
                 </p>
             </div>
         </div><!-- #footer-text -->
+
     </div><!-- #footer-inner end -->
-</div><!-- #footer end -->
+</div>
 
 
 

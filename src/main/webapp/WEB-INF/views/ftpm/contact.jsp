@@ -65,20 +65,20 @@
       <div class="contact-form">
         <form class="form" action="/contact/save" method="post">
           <label>姓名/公司 (<span>*</span>)</label>
-          <input id="contact-name" name="contact_fullName" class="text" type="text" value="" />
+          <input id="contact-name" name="fullName" class="text" type="text" value="" />
 
           <label>邮箱/电话 (<span>*</span>)</label>
-          <input id="contact-email" name="contact_email" class="text" type="text" value="" />
+          <input id="contact-email" name="phoneOrEmail" class="text" type="text" value="" />
 
           <label>联系内容 (<span>*</span>)</label>
-          <textarea id="contact-message" name="contact_message" rows="4" cols="3"></textarea>
+          <textarea id="contact-message" name="message" rows="4" cols="3"></textarea>
 
           <input class="submit" type="submit" value="提交" />
           <div class="clear"></div>
         </form>
       </div><!-- .contact-form end -->
 
-      <h2 class="title">找到我们</h2>
+      <h2 class="title"></h2>
 
      <%-- <div class="gmap">
         <!-- Google Maps Element Code -->
@@ -120,7 +120,7 @@
     <div id="footer-text">
       <div class="footer-copyright">
         <p class="top">
-          &copy; <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>  &copy; | Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
+          <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>| Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
         </p>
         <p class="bottom">
           北京禾意建筑设计咨询有限公司
