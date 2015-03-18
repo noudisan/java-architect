@@ -10,7 +10,7 @@
         <level value="INFO" />
     </logger>
 
-    <logger name="com.ztt.controller">
+    <logger name="com.base.controller">
         <level value="INFO" />
     </logger>
 

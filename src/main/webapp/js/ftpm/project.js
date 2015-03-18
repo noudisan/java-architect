@@ -51,7 +51,7 @@ function initProject(){
                     }
                     detailHtml += '</div></div>';
                     detailHtml += '<div class="portfolio-item-right">'
-                    detailHtml += '<div class="portfolio-controls"><a class="left-arrow"></a><a class="right-arrow"></a><a class="button-close"></a><div class="clear"></div></div>';
+                    detailHtml += '<div class="portfolio-controls"><a class="button-close"></a><div class="clear"></div></div>';
                     detailHtml += '<h2>'+dto.title+'</h2>';
                     detailHtml += '<span>'+dto.title+'</span>';
                     if(dto.architectInfoDto && dto.architectInfoDto.desc1){
@@ -69,7 +69,7 @@ function initProject(){
                     }else{
                         detailHtml += '<p></p>';
                     }
-                    detailHtml += '<a href="#" class="portfolio-link"></a>';
+                    detailHtml += '';
                     detailHtml += '</div><div class="clear"></div></div>';
 
                 }
@@ -194,7 +194,7 @@ function setUpSlider() {
         effect: 'slide',
         slideSpeed: 650,
         play: 3000,
-        pause: 2000,
+        pause: 3000,
         hoverPause: true
     });
 }

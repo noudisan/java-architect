@@ -35,7 +35,7 @@
     </bean>
 
     <!-- 统一加载文职 同在context-param 或 servlet中 -->
-    <context:component-scan base-package="com.ztt" />
+    <context:component-scan base-package="com.base" />
 
 	<context:annotation-config/>
 	
@@ -58,7 +58,7 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
-	 <!-- Enable @AspectJ support -->
+	 <!-- Enable @AspectJ base -->
     <aop:aspectj-autoproxy/>
 
 

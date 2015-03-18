@@ -31,6 +31,7 @@ function homeSlider() {
     if (homeSlider.length != 0) {
         homeSlider.bxSlider({
             'auto': true,
+            'pause':8000,
             'nextText': '',
             'prevText': ''
         });

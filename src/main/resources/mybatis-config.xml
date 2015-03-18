@@ -9,7 +9,7 @@
     </typeAliases>-->
 
     <plugins>
-        <plugin interceptor="com.ztt.mybatisinterceptor.PagingationAndSortInterceptor">
+        <plugin interceptor="com.base.mybatisinterceptor.PagingationAndSortInterceptor">
         </plugin>
     </plugins>
 

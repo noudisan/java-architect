@@ -38,28 +38,28 @@
     </bean>
 
    <!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.ztt"/>
+        <property name="basePackage" value="com.basee"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>-->
 
     <bean id="exportFileMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.ztt.dao.ExportFileMapper" />
+        <property name="mapperInterface" value="com.base.dao.ExportFileMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     <bean id="architectMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.ztt.dao.ArchitectMapper" />
+        <property name="mapperInterface" value="com.base.dao.ArchitectMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     <bean id="contactMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.ztt.dao.ContactMapper" />
+        <property name="mapperInterface" value="com.base.dao.ContactMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     <bean id="architectDetailMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.ztt.dao.ArchitectDetailMapper" />
+        <property name="mapperInterface" value="com.base.dao.ArchitectDetailMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
     <bean id="architectInfoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.ztt.dao.ArchitectInfoMapper" />
+        <property name="mapperInterface" value="com.base.dao.ArchitectInfoMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
 </beans>

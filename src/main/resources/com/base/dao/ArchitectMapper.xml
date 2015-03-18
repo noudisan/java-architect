@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.base.dao.ArchitectMapper">
+
+    <resultMap id="architectModel" type="com.base.dto.ArchitectDto">
+        <id column="ID" property="id"/>
+        <id column="NAME" property="name"/>
+        <id column="IMAGE_PATH" property="imagePath"/>
+        <id column="REMARKS" property="remarks"/>
+        <id column="TYPE" property="type"/>
+        <id column="CREATE_DATE" property="createDate"/>
+        <id column="STATUS" property="status"/>
+        <id column="SORT" property="sort"/>
+        <id column="title" property="title"/>
+    </resultMap>
+
+    <insert id="save" parameterType="com.base.dto.ArchitectDto" keyProperty="id">
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        <![CDATA[
+          INSERT INTO TB_ARCHITECT (ID,NAME,IMAGE_PATH,REMARKS,TYPE,CREATE_DATE,STATUS,SORT,TITLE)
+          VALUES (#{id},#{name},#{imagePath},#{remarks},#{type},#{createDate},#{status},#{sort},#{title})
+        ]]>
+    </insert>
+
+    <select id="query" parameterType="com.base.dto.ArchitectSearchDto" resultMap="architectModel">
+        <![CDATA[ select * from TB_ARCHITECT ]]>
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="id != null ">
+                <![CDATA[ID = #{id}]]>
+            </if>
+            <if test="name != null and name != '' ">
+                <![CDATA[ AND NAME = #{name}]]>
+            </if>
+        </trim>
+        <![CDATA[ ORDER BY SORT ]]>
+    </select>
+
+    <select id="count" parameterType="com.base.dto.ArchitectSearchDto" resultType="int">
+        <![CDATA[ select count(*) from TB_ARCHITECT ]]>
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="id != null ">
+                <![CDATA[ID = #{id}]]>
+            </if>
+            <if test="name != null and name != '' ">
+                <![CDATA[ AND NAME = #{name}]]>
+            </if>
+        </trim>
+    </select>
+
+    <delete id="delete" parameterType="long">
+        <![CDATA[
+            delete from TB_ARCHITECT  where ID = #{id}
+        ]]>
+    </delete>
+
+    <select id="queryByName" parameterType="string" resultMap="architectModel">
+        <![CDATA[ select * from TB_ARCHITECT where NAME = #{name}]]>
+    </select>
+
+    <update id="update"  parameterType="com.base.dto.ArchitectDto" >
+        <![CDATA[update TB_ARCHITECT ]]>
+        <trim prefix="SET" prefixOverrides=", ">
+            <if test="name != null and name !=''">
+                <![CDATA[, NAME = #{name}]]>
+            </if>
+            <if test="imagePath != null and imagePath !=''">
+                <![CDATA[, IMAGE_PATH = #{imagePath}]]>
+            </if>
+            <if test="remarks != null and remarks !=''">
+                <![CDATA[, REMARKS = #{remarks}]]>
+            </if>
+            <if test="type != null and type !=''">
+                <![CDATA[, TYPE = #{type}]]>
+            </if>
+            <if test="createDate != null ">
+                <![CDATA[, CREATE_DATE = #{createDate}]]>
+            </if>
+            <if test="status != null and status !='' ">
+                <![CDATA[, STATUS = #{status}]]>
+            </if>
+            <if test="sort != null and sort !='' ">
+                <![CDATA[, SORT = #{sort}]]>
+            </if>
+            <if test="title != null and title !='' ">
+                <![CDATA[, TITLE = #{title}]]>
+            </if>
+        </trim>
+        <![CDATA[WHERE ID = #{id} ]]>
+    </update>
+
+
+</mapper>
+

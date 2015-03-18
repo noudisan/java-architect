@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 		$("#menu-container .content").hide();
 		$("#menu-container #menu-"+id[1]).addClass("animated fadeInDown").show();
 		$("#menu-container .homepage").hide();
-		$(".support").hide();
+		$(".base").hide();
 		$(".testimonials").hide();
 		return false;
 	});
