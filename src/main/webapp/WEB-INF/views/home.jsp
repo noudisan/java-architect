@@ -1,13 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
+    <meta name="baidu-site-verification" content="jFEuDQubfV" />
     <title>禾意建筑设计</title>
     <meta name="keywords" content="北京禾意建筑设计咨询有限公司，建筑设计,景观设计,文化建筑设计,旅游规划设计,商业办公设计,居住建筑设计,住宅设计,方案设计,学校设计,幼儿园设计,中小学设计" />
     <meta name="description" content="多元文化交流的时代，让来自西方文化的入侵，给我们本土文化的保留和传承带来挑战，失去我们传统建筑的灵魂，
     我们希望通过在国内的建筑实践，通过对我们本土文化的挖掘，并且将建筑与城市空间、景观环境、室内空间与现代科技文化结合到一起综合研究和设计，重新找回本该属于我们的建筑灵魂，绽放光辉，得到传承。" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
+    <meta name="viewport"content="width=980, initial-scale=1.0"/>
+    <meta name="format-detection"content="telephone=no">
     <!-- Style -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/reset.css" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
@@ -31,10 +34,14 @@
 
 </head>
 <body>
-<!-- Dead simple image preloading without javascript ;-) -->
-<%--<div id="preload">
-    <img src="${pageContext.request.contextPath}/images/ftpm/service_hover.png" alt="" />
-</div>--%>
+
+<div id="top-footer">
+    <div id="top-footer-inner" class="container clearfix">
+        <a class="top-footer-up"></a>
+    </div>
+</div>
+
+
 <input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 <div id="header">
     <div class="logotype">
@@ -100,33 +107,33 @@
     </li>
 </ul><!-- #services end -->
 
-<div id="footer">
-    <div id="footer-inner" class="clearfix container">
+<div id="footer" class="foot_width" style="line-height:19px;">
+    <div id="footer-inner" class="container clearfix">
         <div class="clear"></div>
         <div id="footer-heading">
-            <a name="contact_us"><h1>关于我们</h1></a>
+            <h1>关于我们</h1><a name="contact_us"></a>
             <h2>请联系我们获得更多信息</h2>
         </div>
 
         <div id="recent-works" style="height: 190px;">
-            <div style="float: left;width: 410px;color:white;margin-right: 100px;padding-left: 50px;text-indent:20px;line-height:19px;" >
-                北京禾意建筑设计咨询有限公司在北京成立，以建筑、规划、景观的研究和设计为内容的工作室。禾意与同类事务所相比，我们具备全面的设计能力，不仅有建筑专业，
-                同时具备结构、电气、给排水、暖通专业设计能力，能更好的服务于项目。<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前、禾意以参与河北、河南、山东、四川、北京、江苏、等多个城市的建设中，为中国城市建设贡献微薄之力。
+            <div style="float: left;width: 412px;color:white;margin-right: 100px;padding-left: 50px;" >
+                北京禾意建筑设计咨询有限公司在北京成立，是一个以建筑、规划、景观的研究和设计为内容的工作室。禾意与同类事务所相比，
+                我们具备全面的设计能力，不仅有建筑专业， 同时具备结构、电气、给排水、暖通专业设计能力，能更好的服务于项目。<br>
+                目前，禾意已参与北京、山东、河北、河南、四川、江苏等多个城市的建设，为中国城市建设贡献微薄之力。
             </div>
             <div style="float: right;width:400px;color:white;">
                 <form class="form" action="/contact/save" method="post">
                     <div >
                         <label>姓名/公司 (<span>*</span>)</label>
-                        <input id="contact-name" name="fullName"  type="text" style="border:1px solid white;color: white;width: 220px;" />
+                        <input id="contact-name" name="fullName"  type="text" style="border:1px solid white;color: white;width: 260px;" />
                     </div>
                     <div >
                         <label>邮箱/电话 (<span>*</span>)</label>
-                        <input id="contact-email" name="phoneOrEmail" type="text"  style="border:1px solid white;color: white;width: 220px;"/>
+                        <input id="contact-email" name="phoneOrEmail" type="text"  style="border:1px solid white;color: white;width: 260px;"/>
                     </div>
                     <div >
                         <label>联系&nbsp;内容 (<span>*</span>)</label>
-                        <textarea id="contact-message" name="message" style="border:1px solid white;width: 220px;height: 60px;color: white"></textarea>
+                        <textarea id="contact-message" name="message" style="border:1px solid white;width: 260px;height: 60px;color: white"></textarea>
                     </div>
                     <div >
                         <input class="submit" type="submit" value="发送" style="width:50px;height:24px;background:#5bc0de;" />
@@ -136,24 +143,14 @@
             </div>
         </div>
 
-        <div id="our-clients" class="clearfix" style="padding-left: 50px;color:white">
+        <div id="our-clients" class="clearfix" style="padding-left: 50px;color:white;">
             <div style="margin-top: 40px;">
-                地址：北京市海淀区车公庄西路甲19号华通大厦A座626室
-            </div>
-            <div>
-                电话：(86 10) 53312615  18611516653
-            </div>
-            <div>
-                传真：(86 10) 53312615
-            </div>
-            <div>
-                邮编：100048
-            </div>
-            <div>
-                邮箱：heyi_studio@163.com
-            </div>
-            <div style="margin-bottom: 40px;">
-                QQ：2514163590
+                地址：北京市海淀区车公庄西路甲19号华通大厦A座626室<br>
+                电话：(86 10)&nbsp;53312615&nbsp;&nbsp;18611516653&nbsp;<br>
+                传真：(86 10) 53312615<br>
+                邮编：100048<br>
+                邮箱：heyi_studio@163.com<br>
+                &nbsp;QQ：2514163590&nbsp;<br>
             </div>
         </div><!-- #our-client end -->
 

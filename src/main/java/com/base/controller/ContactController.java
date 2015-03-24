@@ -40,6 +40,9 @@ public class ContactController {
 
     @RequestMapping(value = "save", method = RequestMethod.POST)
     public String save(ContactForm contactForm){
+        if(StringUtils.isNullOrEmpty(contactForm.getMessage())){
+            return "redirect:/index#contact_us";
+        }
         try{
             ContactDto contactDto = new ContactDto();
             contactDto.setFullName(contactForm.getFullName());
@@ -54,9 +57,9 @@ public class ContactController {
             contactDto.setMessage(contactForm.getMessage());
             contactDto.setCreateDate(new Date());
             contactService.save(contactDto);
-            return "redirect:/index";
+            return "redirect:/index#contact_us";
         }catch (Exception e){
-            return "redirect:/index";
+            return "redirect:/index#contact_us";
         }
 
 

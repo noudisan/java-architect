@@ -22,7 +22,7 @@ public class ImageController {
         List<ImageDto> imageList =new ArrayList<>();
         List<String> titleList = getImageList();
         String imageHead = GlobalConfiguration.IMAGE_ARCHITECT_URL;
-        for(int i=1;i<12;i++){
+        for(int i=1;i<17;i++){
             ImageDto dto =new ImageDto();
             dto.setUrl(imageHead + "/architect/home_slider/" + i + ".jpg");
             dto.setTitle(titleList.get(i - 1));

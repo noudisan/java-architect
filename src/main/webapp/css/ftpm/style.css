@@ -41,9 +41,8 @@ i { font-style:italic; }
 * html .clearfix { zoom:1; }
 *:first-child+html .clearfix { zoom:1; }
 #top-footer {
-  display:none;
   background:#1a1a1a;
-  padding:51px 0 45px 0;
+  padding:1px 0 3px 0;
 }
 #top-footer #top-footer-inner { position:relative; }
 #top-footer #top-footer-inner h3 {
@@ -91,8 +90,8 @@ i { font-style:italic; }
 
 #header {
   width:980px;
-  height:83px;
-  margin:5% auto 52px auto;
+  height:55px;
+  margin:5% auto 55px auto;
   background:url(../../images/ftpm/light_dots.png) repeat-x bottom center;
 }
 #header .logotype { float:left; margin-top: -3%}
@@ -203,28 +202,39 @@ a.bx-next {
 a.bx-next:hover { background:url(../../images/ftpm/slider_right_hover.png) no-repeat center center; }
 #services { margin:50px auto 55px auto; }
 #services li {
-  margin:0 27px 0 28px;
+  margin:0 22px 0 25px;
   float:left;
 }
 #services li a {
-  width:139px;
+  width:149px;
   height:139px;
   display:block;
   text-indent:-9999px;
 }
 #services li a:hover {
   height:81px;
-  width:90px;
+  width:100px;
   padding:58px 24px 0 25px;
   text-indent:0;
   line-height:16px;
   text-align:center;
   text-decoration:none;
   font-family:'RangerRegular', Arial, sans-serif;
-  font-size:20px;
+  font-size:18px;
   color:#ffffff;
   background:url(../../images/ftpm/services/service_hover.png) no-repeat center center !important;
 }
+
+@media screen and (max-device-width: 1080px) {
+  .foot_width{
+    background:#1a1a1a;
+    position:relative;
+    bottom:0;
+    left:0;
+  }
+}
+
+
 #footer {
   width:100%;
   background:#1a1a1a;
@@ -234,8 +244,6 @@ a.bx-next:hover { background:url(../../images/ftpm/slider_right_hover.png) no-re
 }
 #footer div h1.title {
   margin:0 0 15px 0;
-  font-family:'RangerRegular', Arial, sans-serif;
-  font-size:22px;
   color:#ffffff;
   text-shadow:1px 1px 1px #000000;
   filter:dropshadow(color=#000000,offx=1,offy=1);
@@ -246,7 +254,6 @@ a.bx-next:hover { background:url(../../images/ftpm/slider_right_hover.png) no-re
   margin:53px 0 50px 0;
   padding:0 0 0 50px;
   /*background:url(../../images/ftpm/calendar_icon.png) no-repeat left center;*/
-  font-family:Georgia, Times, "Times New Roman", serif;
   text-shadow:1px 1px 1px #000000;
   filter:dropshadow(color=#000000,offx=1,offy=1);
 }

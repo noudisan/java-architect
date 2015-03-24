@@ -6,8 +6,8 @@
   <meta name="description" content="多元文化交流的时代，让来自西方文化的入侵，给我们本土文化的保留和传承带来挑战，失去我们传统建筑的灵魂，
     我们希望通过在国内的建筑实践，通过对我们本土文化的挖掘，并且将建筑与城市空间、景观环境、室内空间与现代科技文化结合到一起综合研究和设计，重新找回本该属于我们的建筑灵魂，绽放光辉，得到传承。" />
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <%--<meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
+  <meta name="viewport"content="width=980, initial-scale=0.9"/>
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/reset.css" />
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
@@ -32,6 +32,12 @@
 
 </head>
 <body>
+<div id="top-footer">
+  <div id="top-footer-inner" class="container clearfix">
+    <a class="top-footer-up"></a>
+  </div>
+</div>
+
 <input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 <div id="header">
   <div class="logotype">
@@ -72,10 +78,10 @@
   基于强大的建筑设计能力，禾意设计在强调概念创新的同时，更以注重可实施性，通过对经济、建筑、景观的整合，禾意设计善于空间塑造和城市设计导则的建立。禾意设计，通过设计为产品增值，为客户带来使用价值和精神价值，
   作品风格多样，实现度极高，在业内享有极高美誉。<br/>
 
-  禾意致力于科技创新、节能减排与高舒适度住宅的设计与研究，并为客户提供工业化与标准化的产品线研究工作。
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;禾意致力于科技创新、节能减排与高舒适度住宅的设计与研究，并为客户提供工业化与标准化的产品线研究工作。
   专业化的总图设计为各类复杂场地提供了道路、竖向以及综合管网的最优化解决方案。<br/>
 
-  目前，禾意已参与河北、河南、山东、四川、北京、江苏等多个城市的建设中，为中国城市建设贡献微薄之力。<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前，禾意已参与北京、河北、河南、山东、四川、江苏等多个城市的建设中，为中国城市建设贡献微薄之力。<br/>
 </div>
 
 <div id="footer">

@@ -6,6 +6,7 @@
   <meta name="description" content="多元文化交流的时代，让来自西方文化的入侵，给我们本土文化的保留和传承带来挑战，失去我们传统建筑的灵魂，
     我们希望通过在国内的建筑实践，通过对我们本土文化的挖掘，并且将建筑与城市空间、景观环境、室内空间与现代科技文化结合到一起综合研究和设计，重新找回本该属于我们的建筑灵魂，绽放光辉，得到传承。" />
   <meta charset="UTF-8">
+  <meta name="viewport"content="width=980, initial-scale=0.9"/>
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/reset.css" />
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
@@ -36,6 +37,12 @@
 <input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 
 <input type="hidden" id="selectProject" value="${projectType}">
+<div id="top-footer">
+  <div id="top-footer-inner" class="container clearfix">
+    <a class="top-footer-up"></a>
+  </div>
+</div>
+
 <div id="header">
   <div class="logotype">
     <a href="index.html">
