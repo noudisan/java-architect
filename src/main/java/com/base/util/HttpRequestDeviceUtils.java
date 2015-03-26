@@ -76,29 +76,32 @@ public class HttpRequestDeviceUtils {
      * @return 如果命中手机特征规则，则返回对应的特征字符串
      */
     public static boolean isMobileDevice(HttpServletRequest request){
-        boolean pcFlag = false;
-        boolean mobileFlag = false;
-        String via = request.getHeader("Via");
-        String userAgent = request.getHeader("user-agent");
-        for (int i = 0; via!=null && !via.trim().equals("") && i < mobileGateWayHeaders.length; i++) {
-            if(via.contains(mobileGateWayHeaders[i])){
-                mobileFlag = true;
-                break;
+        try{
+            boolean pcFlag = false;
+            boolean mobileFlag = false;
+            String via = request.getHeader("Via");
+            String userAgent = request.getHeader("user-agent");
+            for (int i = 0; via!=null && !via.trim().equals("") && i < mobileGateWayHeaders.length; i++) {
+                if(via.contains(mobileGateWayHeaders[i])){
+                    mobileFlag = true;
+                    break;
+                }
             }
-        }
-        for (int i = 0;!mobileFlag && userAgent!=null && !userAgent.trim().equals("") && i < mobileUserAgents.length; i++) {
-            if(userAgent.contains(mobileUserAgents[i])){
-                mobileFlag = true;
-                break;
+            for (int i = 0;!mobileFlag && userAgent!=null && !userAgent.trim().equals("") && i < mobileUserAgents.length; i++) {
+                if(userAgent.contains(mobileUserAgents[i])){
+                    mobileFlag = true;
+                    break;
+                }
             }
-        }
-        for (int i = 0; userAgent!=null && !userAgent.trim().equals("") && i < pcHeaders.length; i++) {
-            if(userAgent.contains(pcHeaders[i])){
-                pcFlag = true;
+            for (int i = 0; userAgent!=null && !userAgent.trim().equals("") && i < pcHeaders.length; i++) {
+                if(userAgent.contains(pcHeaders[i])){
+                    pcFlag = true;
+                }
             }
-        }
-        if(mobileFlag==true && mobileFlag!=pcFlag){
-            return true;
+            if(mobileFlag==true && mobileFlag!=pcFlag){
+                return true;
+            }
+        }catch (Exception e){
         }
         return false;
     }

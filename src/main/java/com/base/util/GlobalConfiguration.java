@@ -8,7 +8,7 @@ import java.util.Properties;
 @Component
 public class GlobalConfiguration {
 
-    public volatile static String IMAGE_ARCHITECT_URL;
+  /*  public volatile static String IMAGE_ARCHITECT_URL;
 
     public GlobalConfiguration() {
     }
@@ -26,5 +26,5 @@ public class GlobalConfiguration {
             new Exception("初始化资源发生异常");
             System.exit(1);
         }
-    }
+    }*/
 }

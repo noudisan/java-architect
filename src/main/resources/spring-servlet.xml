@@ -61,5 +61,6 @@
 	 <!-- Enable @AspectJ base -->
     <aop:aspectj-autoproxy/>
 
+    <context:property-placeholder location="classpath:build.properties" file-encoding="UTF-8"/>
 
 </beans>

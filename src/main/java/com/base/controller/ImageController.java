@@ -2,6 +2,7 @@ package com.base.controller;
 
 import com.base.dto.ImageDto;
 import com.base.util.GlobalConfiguration;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,13 +17,20 @@ import java.util.List;
 @RequestMapping("/image")
 public class ImageController {
 
+    @Value("${image.architect.url}")
+    private String imageHead;
+
     @RequestMapping(value = "homeSlider")
     @ResponseBody
     public List<ImageDto> homeSlider() {
         List<ImageDto> imageList =new ArrayList<>();
         List<String> titleList = getImageList();
-        String imageHead = GlobalConfiguration.IMAGE_ARCHITECT_URL;
+        //String imageHead = GlobalConfiguration.IMAGE_ARCHITECT_URL;
+        List<Integer> removeList= removeList();
         for(int i=1;i<17;i++){
+            if(removeList.contains(i)){
+                continue;
+            }
             ImageDto dto =new ImageDto();
             dto.setUrl(imageHead + "/architect/home_slider/" + i + ".jpg");
             dto.setTitle(titleList.get(i - 1));
@@ -57,5 +65,16 @@ public class ImageController {
         imageList.add("毅徳·首誉-济宁豪德住宅项目");
 
         return imageList;
+    }
+
+    public List<Integer> removeList(){
+        List<Integer> list =new ArrayList<>();
+        list.add(2);
+        list.add(5);
+        list.add(11);
+        list.add(15);
+        list.add(16);
+
+        return list;
     }
 }
