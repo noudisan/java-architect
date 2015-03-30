@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="nofollow" />
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/contactList.js"></script>
 
 </head>

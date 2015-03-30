@@ -59,6 +59,11 @@
         <![CDATA[ select * from TB_ARCHITECT where NAME = #{name}]]>
     </select>
 
+    <select id="getById" parameterType="long" resultMap="architectModel">
+        <![CDATA[ select * from TB_ARCHITECT where ID = #{id}]]>
+    </select>
+
+
     <update id="update"  parameterType="com.base.dto.ArchitectDto" >
         <![CDATA[update TB_ARCHITECT ]]>
         <trim prefix="SET" prefixOverrides=", ">

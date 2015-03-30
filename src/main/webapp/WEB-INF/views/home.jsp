@@ -8,25 +8,20 @@
     <meta name="description" content="多元文化交流的时代，让来自西方文化的入侵，给我们本土文化的保留和传承带来挑战，失去我们传统建筑的灵魂，
     我们希望通过在国内的建筑实践，通过对我们本土文化的挖掘，并且将建筑与城市空间、景观环境、室内空间与现代科技文化结合到一起综合研究和设计，重新找回本该属于我们的建筑灵魂，绽放光辉，得到传承。" />
     <meta charset="UTF-8">
-    <%--<meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
     <meta name="viewport"content="width=980, initial-scale=1.0"/>
     <meta name="format-detection"content="telephone=no">
-    <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/reset.css" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
-    <!-- javascript -->
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.easing.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.bxSlider.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.blackAndWhite.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.bxSlider.js"></script>
+
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/home.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/less.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/less.js"></script>
 
     <script>
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?eca68b27aa712a4e8482a9ac3ee26c64";
+            hm.src = "//hm.baidu.com/hm.js?${baiduCode}";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
@@ -84,26 +79,31 @@
         <a href="${pageContext.request.contextPath}/project?projectType=sybg" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/01swbg.png)">
             商业办公
         </a>
+        <span style="font-size: 200%;margin-left: 30px;">商业办公</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=jzgh" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/02jzgh.png)">
-            居住规划
+
         </a>
+        <span style="font-size: 200%;margin-left: 30px;">居住规划</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=jgsj" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/03jgsj.png)">
             景观设计
         </a>
+        <span style="font-size: 200%;margin-left: 30px;">景观设计</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=whjy" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/04whjy.png)">
             文化教育
         </a>
+        <span style="font-size: 200%;margin-left: 30px;">文化教育</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=zydc" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/05zydc.png)">
             资源地产
         </a>
+        <span style="font-size: 200%;margin-left: 30px;">资源地产</span>
     </li>
 </ul><!-- #services end -->
 

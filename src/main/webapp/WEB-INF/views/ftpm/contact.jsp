@@ -9,22 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Style -->
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/reset.css" />
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
   <!-- javascript -->
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.easing.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.bxSlider.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.blackAndWhite.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/jquery.isotope.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.easing.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.bxSlider.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.isotope.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/project.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/less.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/less.js"></script>
 
   <script>
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?eca68b27aa712a4e8482a9ac3ee26c64";
+      hm.src = "//hm.baidu.com/hm.js?${baiduCode}";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();

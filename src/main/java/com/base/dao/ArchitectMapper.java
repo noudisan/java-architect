@@ -21,4 +21,6 @@ public interface ArchitectMapper {
     ArchitectDto queryByName(String name);
 
     void update(ArchitectDto dto);
+
+    ArchitectDto getById(Long id);
 }

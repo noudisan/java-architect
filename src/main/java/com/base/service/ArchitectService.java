@@ -9,9 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by zhoutaotao on 2014/10/29.
- */
+
 @Service
 public class ArchitectService {
     @Autowired
@@ -38,4 +36,15 @@ public class ArchitectService {
         return architectDtoList;
     }
 
+    public ArchitectDto getById(Long id) {
+        ArchitectDto dto = architectMapper.getById(id);
+
+        List<ArchitectDetailDto> architectDetailList = architectDetailMapper.query(dto.getId());
+        dto.setArchitectDetailDtoList(architectDetailList);
+
+        ArchitectInfoDto architectInfoDto = architectInfoMapper.getByArchitectId(dto.getId());
+        dto.setArchitectInfoDto(architectInfoDto);
+
+        return dto;
+    }
 }

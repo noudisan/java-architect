@@ -6,19 +6,16 @@
   <meta name="description" content="多元文化交流的时代，让来自西方文化的入侵，给我们本土文化的保留和传承带来挑战，失去我们传统建筑的灵魂，
     我们希望通过在国内的建筑实践，通过对我们本土文化的挖掘，并且将建筑与城市空间、景观环境、室内空间与现代科技文化结合到一起综合研究和设计，重新找回本该属于我们的建筑灵魂，绽放光辉，得到传承。" />
   <meta charset="UTF-8">
+  <%--<meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
   <meta name="viewport"content="width=980, initial-scale=0.9"/>
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
   <!-- javascript -->
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.easing.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.bxSlider.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.slides.js"></script>
-
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.isotope.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/project.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/less.js"></script>
 
+  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/detail.js"></script>
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -31,16 +28,13 @@
 
 </head>
 <body>
-<input type="hidden" id="image_url" value="${imageHead}">
-<input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
-
-<input type="hidden" id="selectProject" value="${projectType}">
 <div id="top-footer">
   <div id="top-footer-inner" class="container clearfix">
     <a class="top-footer-up"></a>
   </div>
 </div>
 
+<input type="hidden" id="ctx_url" value="${pageContext.request.contextPath}">
 <div id="header">
   <div class="logotype">
     <a href="index.html">
@@ -48,57 +42,31 @@
     </a>
   </div>
   <ul>
-    <li><a href="/home">首页</a> -</li>
-    <li class="selected" ><a href="/project">项目</a> -</li>
-    <li><a href="/idea">服务理念</a> -</li>
+    <li ><a href="/home">首页</a> -</li>
+    <li ><a href="/project">项目</a> -</li>
+    <li class="selected" ><a href="/idea">服务理念</a> -</li>
     <li class="last"><a href="/home#contact_us">联系方式</a></li>
   </ul>
 </div><!-- #header end -->
+<input type="hidden" id="detail_id" value="${id}" >
+<input type="hidden" id="image_url" value="${imageHead}">
 
-<div id="head-text" class="container">
-  <h1><strong>工业风</strong>催生下的中国地产形态即将过去,在<strong>互联网</strong>浪潮滋润下的中国建筑将会是怎样？</h1>
-  <h2>我们一直坚信，需求是设计进化和演变的基础条件，情感是建筑存在的发展因素</h2>
+<div class="container" >
+    <div style="float: left;width: 400px;overflow: hidden;margin: 0 34px 26px 0;">
+      <div  id="detail-slider" style="margin:0 auto 50px auto;position:relative;"></div>
+    </div>
+    <div style="float: left;padding: 9px 0 0 0;width: 360px;line-height:19px;">
+      <h2 id="detail_title" style="font-size: 200%;font-weight:bold;margin-bottom: 30px;"></h2>
+      <span></span>
+      <p id="detail_desc1" ></p>
+      <p id="detail_desc2" ></p>
+      <p id="detail_desc3" ></p>
+    </div>
+    <div class="clear"></div>
+
 </div>
-<div class="dark-dots"></div>
 
-
-<div id="slider-container">
-  <div id="portfolio-items-slider">
-
-  </div>
-
-</div>
-<!-- #slider end -->
-
-<div id="portfolio-inner" class="container">
-  <h1 class="title"></h1>
-  <ul id="filters">
-    <li class="selected">
-      <a data-filter="*">所有项目</a> /
-    </li>
-    <li>
-      <a data-filter=".sybg">商业办公</a> /
-    </li>
-    <li>
-      <a data-filter=".jzgh">居住规划</a> /
-    </li>
-    <li>
-      <a data-filter=".jgsj">景观设计</a> /
-    </li>
-    <li>
-      <a data-filter=".whjy">文化教育</a> /
-    </li>
-    <li class="last">
-      <a data-filter=".zydc">资源地产</a>
-    </li>
-  </ul>
-  <div class="clear"></div>
-
-  <ul id="portfolio-items" class="clearfix">
-
-  </ul><!-- #portfolio-items end -->
-</div><!-- #portfolio-inner end -->
-
+<div style="margin-bottom: 250px;"></div>
 
 <div id="footer">
   <div id="footer-inner" class="clearfix container">
