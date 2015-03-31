@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"content="width=980, initial-scale=0.9"/>
   <!-- Style -->
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css?v=1" />
   <!-- javascript -->
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.easing.js"></script>

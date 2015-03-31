@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"content="width=980, initial-scale=1.0"/>
     <meta name="format-detection"content="telephone=no">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ftpm/style.css?v=1" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.bxSlider.js"></script>
 
@@ -79,31 +79,31 @@
         <a href="${pageContext.request.contextPath}/project?projectType=sybg" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/01swbg.png)">
             商业办公
         </a>
-        <span style="font-size: 200%;margin-left: 30px;">商业办公</span>
+        <span>商业办公</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=jzgh" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/02jzgh.png)">
 
         </a>
-        <span style="font-size: 200%;margin-left: 30px;">居住规划</span>
+        <span>居住规划</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=jgsj" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/03jgsj.png)">
             景观设计
         </a>
-        <span style="font-size: 200%;margin-left: 30px;">景观设计</span>
+        <span>景观设计</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=whjy" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/04whjy.png)">
             文化教育
         </a>
-        <span style="font-size: 200%;margin-left: 30px;">文化教育</span>
+        <span>文化教育</span>
     </li>
     <li>
         <a href="${pageContext.request.contextPath}/project?projectType=zydc" style="background: url(${pageContext.request.contextPath}/images/ftpm/services/05zydc.png)">
             资源地产
         </a>
-        <span style="font-size: 200%;margin-left: 30px;">资源地产</span>
+        <span>资源地产</span>
     </li>
 </ul><!-- #services end -->
 
