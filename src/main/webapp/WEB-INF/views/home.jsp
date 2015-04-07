@@ -47,8 +47,9 @@
     <ul>
         <li class="selected"><a href="/home">首页</a> -</li>
         <li><a href="/project">项目</a> -</li>
-        <li><a href="/idea">服务理念</a> -</li>
-        <li class="last"><a href="#contact_us">联系方式</a></li>
+        <li><a href="/idea">服务支持</a> -</li>
+        <li><a href="/company">公司简介</a> -</li>
+        <li class="last"><a href="/contact">联系方式</a></li>
     </ul>
 </div><!-- #header end -->
 
@@ -107,6 +108,7 @@
     </li>
 </ul><!-- #services end -->
 
+<!--
 <div id="footer" class="foot_width" style="line-height:19px;">
     <div id="footer-inner" class="container clearfix">
         <div class="clear"></div>
@@ -152,7 +154,23 @@
                 邮箱：heyi_studio@163.com<br>
                 &nbsp;QQ：2514163590&nbsp;<br>
             </div>
-        </div><!-- #our-client end -->
+        </div>
+
+        <div id="footer-text">
+            <div class="footer-copyright">
+                <p class="top">
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备15009279号</a>| Copyright © 2014 - 2015 | 北京禾意建筑设计咨询有限公司 |
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+-->
+
+<div id="footer">
+    <div id="footer-inner" class="clearfix container">
+        <div class="clear"></div>
 
         <div id="footer-text">
             <div class="footer-copyright">
@@ -161,11 +179,8 @@
                 </p>
             </div>
         </div><!-- #footer-text -->
-
     </div><!-- #footer-inner end -->
-</div>
-
-
+</div><!-- #footer end -->
 
 </body>
 

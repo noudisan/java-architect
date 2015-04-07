@@ -50,8 +50,9 @@
   <ul>
     <li><a href="/home">首页</a> -</li>
     <li class="selected" ><a href="/project">项目</a> -</li>
-    <li><a href="/idea">服务理念</a> -</li>
-    <li class="last"><a href="/home#contact_us">联系方式</a></li>
+    <li><a href="/idea">服务支持</a> -</li>
+    <li><a href="/company">公司简介</a> -</li>
+    <li class="last"><a href="/contact">联系方式</a></li>
   </ul>
 </div><!-- #header end -->
 

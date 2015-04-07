@@ -13,9 +13,6 @@
   <!-- javascript -->
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery/jquery.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.easing.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.bxSlider.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.isotope.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/js/ftpm/project.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/less.js"></script>
 
   <script>
@@ -46,6 +43,7 @@
     <li><a href="/home">首页</a> -</li>
     <li><a href="/project">项目</a> -</li>
     <li><a href="/idea">服务理念</a> -</li>
+    <li><a href="/company">公司简介</a> -</li>
     <li class="selected"><a href="/contact">联系方式</a></li>
   </ul>
 </div><!-- #header end -->
@@ -63,10 +61,10 @@
     <div class="blog-post blog-post-inner single-page">
 
       <h2 class="title">关于我们</h2>
-      <p>
-        北京禾意建筑设计咨询有限公司在北京成立，以建筑、规划、景观的研究和设计为内容的工作室。禾意与同类事务所相比，我们具备全面的设计能力，不仅有建筑专业，
-        同时具备结构、电气、给排水、暖通专业设计能力，能更好的服务于项目。目前、禾意以参与河北、河南、山东、四川、北京、江苏、等多个城市的建设中，为中国城市建设
-        贡献微薄之力。
+      <p style="  font-size: 12px;line-height: 18px;">
+        北京禾意建筑设计咨询有限公司在北京成立，是一个以建筑、规划、景观的研究和设计为内容的工作室。禾意与同类事务所相比，
+        我们具备全面的设计能力，不仅有建筑专业， 同时具备结构、电气、给排水、暖通专业设计能力，能更好的服务于项目。<br>
+        目前，禾意已参与北京、山东、河北、河南、四川、江苏等多个城市的建设，为中国城市建设贡献微薄之力。
       </p>
 
       <div class="contact-form">
@@ -102,16 +100,16 @@
     <div class="widget">
       <h2>联系方式</h2>
       <p></p>
-
       <p>
         <b>地址</b>:北京市海淀区车公庄西路甲19号华通大厦A座626室<br />
-        <b>电话</b>:(86 10) 53312615<br />
         <b>手机</b>:18611516653<br />
+        <b>电话</b>:(86 10) 53312615<br />
         <b>传真</b>:(86 10) 53312615<br />
-        <b>邮编</b>:100038<br />
+        <b>邮编</b>:100048<br />
         <b>邮箱</b>:heyi_studio@163.com<br />
         <b>QQ</b>:2514163590<br />
       </p>
+      <img src="${pageContext.request.contextPath}/images/ftpm/contact/us.png" width="420px" alt="" />
     </div>
 
   </div><!-- .sidebar end -->

@@ -32,6 +32,7 @@ public class MainController {
 
     @RequestMapping(value = {"","index","home"}, method = RequestMethod.GET)
     public String home(Model model,HttpServletRequest request) {
+        model.addAttribute("baiduCode", baiduCode);
         if(HttpRequestDeviceUtils.isMobileDevice(request)){
             return "redirect:http://m.heyidesign.com";
         }
@@ -59,9 +60,16 @@ public class MainController {
         return "ftpm/contact";
     }
 
+    @RequestMapping(value = {"company"}, method = RequestMethod.GET)
+    public String company(Model model) {
+        model.addAttribute("baiduCode", baiduCode);
+
+        return "ftpm/company";
+    }
+
     @RequestMapping(value = {"detail/{id}"}, method = RequestMethod.GET)
     public String detail(Model model,@PathVariable("id")Long id) {
-
+        model.addAttribute("baiduCode", baiduCode);
         model.addAttribute("id",id);
         model.addAttribute("imageHead", imageHead);
         model.addAttribute("baiduCode", baiduCode);

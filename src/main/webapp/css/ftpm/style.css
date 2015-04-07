@@ -578,7 +578,7 @@ ul#portfolio-items li a:hover span.cat { color:#5c5c5c; }
 #content { margin-top:47px; }
 #content .blog-content {
   float:left;
-  width:700px;
+  width:500px;
   margin-bottom:50px;
 }
 #content .blog-content .blog-post {
@@ -705,7 +705,7 @@ ul#portfolio-items li a:hover span.cat { color:#5c5c5c; }
 }
 #content .contact-form .form textarea, #content .comment-form .form textarea {
   color:#909090;
-  width:684px;
+  width:484px;
   height:84px;
   float:left;
   clear:both;
@@ -750,7 +750,7 @@ ul#portfolio-items li a:hover span.cat { color:#5c5c5c; }
 }
 #content .sidebar {
   margin-left:39px;
-  width:240px;
+  width:340px;
   float:left;
 }
 #content .sidebar .widget { margin:0 0 45px 0; }
@@ -763,8 +763,8 @@ ul#portfolio-items li a:hover span.cat { color:#5c5c5c; }
   margin-bottom:15px;
 }
 #content .sidebar .widget p {
-  font-size:11px;
-  line-height:18px;
+  font-size:13px;
+  line-height:20px;
   margin-bottom:15px;
 }
 #content .sidebar .widget p b {
